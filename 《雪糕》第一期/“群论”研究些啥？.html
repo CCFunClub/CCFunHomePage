@@ -1,0 +1,175 @@
+
+<!doctype html>
+<html lang="zh">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>“群论”研究些啥？</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css" />
+    
+
+    
+
+    
+    <script src="./../assets/front-end-lib/all_components.js"></script>
+    
+        
+        
+        
+
+
+    
+
+    <link rel="stylesheet" href="./../assets/js_css/theme.css">
+    <link rel="stylesheet" href="./../assets/js_css/github-markdown-css.css">
+</head>
+
+
+
+<main id="static_app_llej" class="markdown-body">
+    <main updated="20220508215348" title="“群论”研究些啥？" data-type="NodeDocument" data-n-id="20220508214312-b8r830l" updated="20220508215348" data-n-id="20220508214312-b8r830l"><h1 updated="20220508215348" title="“群论”研究些啥？" data-type="NodeDocument" data-n-id="20220508214312-b8r830l" updated="20220508215348" data-n-id="20220508214312-b8r830l">“群论”研究些啥？</h1>
+<p updated="20220508215307" data-type="NodeParagraph" data-n-id="20220508215209-b05h0ws">作者：马同学图解数学<br /></p>
+<p updated="20220508215348" data-type="NodeParagraph" data-n-id="20220508215209-0xdnalm"><em data-type="NodeEmphasis">按：对群论感兴趣，可以阅读《代数》（Artin著，机械工业出版社）这本书，群论是抽象代数这门学科的一部分，高中生能看懂的。</em></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-q8aul0e">群论不简单么？一个集合和一个二元运算，并且满足群论四大公理。黑纸白字，没有一个符号、一个汉字是我不认识的。经过这么多年的数学训练，加上刷题，那是想证明就证明、想计算就计算，砍瓜切菜、手起刀落、猛虎下山、势如破竹。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-qqopcqb">但是！我很不爽，这种感觉好比有人叫你去砍人，你也不问问为什么，一言不合就出手把人砍翻在地，或者被人砍翻在地，这种行为我们一般把它成为脑残，你的身份就是别人的小弟。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-xidhgi9">我们不要做数学的小弟，刷题不能给我们自由，唯有思考可以。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-lxtphjh">下面就讲一下我对群论的一些思考。</p>
+<h4 id="1-集合" updated="20220508215209" data-type="NodeHeading" data-n-id="20220508215209-f36fgec">1 集合<a id="vditorAnchor-1-集合" class="vditor-anchor" href="#1-集合"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-d0uta8y">讲群论先从集合讲起，集合简单来说就是把一堆东西放在一起（暂时就别提罗素悖论了）：</p>
+<div data-content="\left\{ \text{心},\text{肝},\text{脾},\text{肺},\text{肾} \right\}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-9k6duno">可是这用处不大啊，东西之间得有相互作用才能更好的描述世界啊：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-hhkwbmt"><span class="img" style="display: block;"><img src="../assets/net-img-v2-de1bf6e41108b6fae01e9756c55c5cad_720w-20220508215300-1tjrjtm.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-wq38cyb">东西我们把它称之为对象，对象之间的互相作用我们称之为操作或者运算。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-bl942ok">自然数<span data-subtype="math" data-content="N"></span> 是一个集合，我们从自然数 <span data-subtype="math" data-content="N"></span> 这个集合出发，通过运算可以创造越来越大的集合( <span data-subtype="math" data-content="N"></span> 、 <span data-subtype="math" data-content="Z"></span> 、 <span data-subtype="math" data-content="Q"></span> 、 <span data-subtype="math" data-content="R"></span> 、 <span data-subtype="math" data-content="C"></span> 分别是自然数、整数、有理数、实数、复数)：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-umcc8oo"><span class="img" style="display: block;"><img src="../assets/image-20220508214408-akiicxw.png" alt="image.png" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-0lxtuwr">运算不止加减乘除，数学学到后面就多了很多抽象运算。甚至从集合和运算的角度来看，学数学的过程很多时候就是在不断的扩大对集合和运算的认知。理解的集合和运算越多，相关领域的数学基本上也就理解了。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-kqhbtvs">其中有种特殊的<strong data-type="NodeStrong">集合+运算</strong>就是群。</p>
+<h4 id="2-群" updated="20220508215209" data-type="NodeHeading" data-n-id="20220508215209-e2qad8z">2 群<a id="vditorAnchor-2-群" class="vditor-anchor" href="#2-群"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-fmfumhi">简单来说，群的作用是描述对称。</p>
+<h5 id="2-1-什么叫对称-" updated="20220508215209" data-type="NodeHeading" data-n-id="20220508215209-5qk8y0b">2.1 什么叫对称？<a id="vditorAnchor-2-1-什么叫对称-" class="vditor-anchor" href="#2-1-什么叫对称-"><img src="./../assets/icon/alink.png" /></a></h5>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-zjl0rnt">我们来看看：</p>
+<ul start="0" updated="20220508215209" data-type="NodeList" data-n-id="20220508215209-0q4bv2g">
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-bbfnun2"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-hnm6frx">正方形对称吗?</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-qqqxt2u"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-44tijq9">物理定律对称吗？</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-gevzqqp"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-5i4jmi0">多项式的根对称吗？</p>
+</li>
+</ul>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-bsamymk">上面的问题的答案都是：对称！</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-irhwr44">对称就是：<strong data-type="NodeStrong">“某种操作下的不变性”</strong>，关键字是两个：<strong data-type="NodeStrong">“操作”和“不变性”</strong>，要说明这点让我们通过上面的三个问题来理解。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-8zbi2y3"><strong data-type="NodeStrong">2.1.1 正方形是否对称？</strong></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-ghgj0zo">先看看正方形，其实它对称是蛮明显的，符合我们日常的语义，可是我们也要把它放到数学的语境里来分析一下：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-33ynlxi"><span class="img" style="display: block;"><img src="../assets/net-img-v2-dec02ff2e20b992644e393841b8ccd51_720w-20220508215300-n9csfsi.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-437n9qb">围绕中心点旋转这个<strong data-type="NodeStrong">操作</strong>，正方形所具有的<strong data-type="NodeStrong">不变性</strong>就是对称。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-v0tov12">我们换一种操作，正方形也可以对称：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-x2ivn8g"><span class="img" style="display: block;"><img src="../assets/net-img-v2-fedeb49329381a6d3e660434581698d0_720w-20220508215300-pyy11xw.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-er84idj">围绕中垂线这个<strong data-type="NodeStrong">操作</strong>，正方形也具有<strong data-type="NodeStrong">不变性</strong>，也是一种对称。但是因为操作变了，所以这种对称和上面的那种对称不是同一种对称，之后我会再说到这个问题。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-aho4b5b">假如刚才的正方形只是桌子的桌面，继续围绕中垂线翻转这个操作就不对称了：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-alfi5p3"><span class="img" style="display: block;"><img src="../assets/net-img-v2-58b48ff8d8a3feb456c2fbe6377c8403_720w-20220508215300-gnpbwlr.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-g96akay"><strong data-type="NodeStrong">2.1.2 物理定律是否对称？</strong></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-yymhl0h">这个听起来就有点奇怪了，但是从不变性的角度出发，相对于时间流逝这个操作，今天和昨天的物理定律保持不变，我们可以说物理定律相对时间对称。相对于空间改变这个操作，地球和月球上物理定律保持不变，我们可以说物理定律相对空间对称。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-tjad5z9">这听起来蛮哲学的，不是说数学学到后面都是哲学吗？</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-j46ubrl"><strong data-type="NodeStrong">2.1.3 多项式的根是否对称？</strong></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-q9o62s0">说明下，多项式方程指的是形如 <span data-subtype="math" data-content="x^ n+a_1x^{n-1}+\cdots +a_ n=0"></span> 这样的方程。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-yrjqz2k">群论就是从解多项式的根开始发展起来的，所以自然要谈一下为什么多项式的根具有对称性。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-q185q4p">首先要从简单的一元二次方程说起：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-imc3lsn"><span class="img" style="display: block;"><img src="../assets/net-img-v2-1618e5b0901687fbe78ee6cc64749a44_720w-20220508215300-tp9u8n7.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-b4s8svr">从上图中来看，相对于 <span data-subtype="math" data-content="+\times"></span> 运算，多项式的根互换之后结果不变，针对这个运算它们是对称的。对于 <span data-subtype="math" data-content="-\div"></span> 运算就没有对称性。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-jt1hdl2">这个对称性有什么用？根据 韦达定理，一元二次方程 <span data-subtype="math" data-content="x^2+ax+b=0"></span> ，其中<span data-subtype="math" data-content="a=-(x_1+x_2),b=x_1x_2"></span> ，系数是已知的，实际上我可以联立这样的二元方程组求得方程的根。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-ve0kyq7">所以顺便说一下，群论的发展过程是这样的：</p>
+<ol start="0" updated="20220508215209" data-type="NodeList" data-n-id="20220508215209-f6b49rr">
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-friv2ga"><span class="ListItemDot">1.</span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-8xnqkuk">数学家发现根与方程系数的关系（韦达定理）</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-xe703ss"><span class="ListItemDot">2.</span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-acx0d1e">通过系数计算根的时候发现根的对称性</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-tbzmswf"><span class="ListItemDot">3.</span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-9ep6bwy">伽罗瓦根据根的对称性发现了伽罗瓦群</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-irwjzl2"><span class="ListItemDot">4.</span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-zqh0x3t">群论蓬勃发展</p>
+</li>
+</ol>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-nwtolaq">关于伽罗瓦与一元五次方程的问题，与群紧密相关，但是又涉及到更多别的知识，本文就不继续推下去了。</p>
+<h5 id="2-2-对称如何用数学表示-" updated="20220508215209" data-type="NodeHeading" data-n-id="20220508215209-4k6uvbr">2.2 对称如何用数学表示？<a id="vditorAnchor-2-2-对称如何用数学表示-" class="vditor-anchor" href="#2-2-对称如何用数学表示-"><img src="./../assets/icon/alink.png" /></a></h5>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-44s1eaz">让我们从正方形开始解读如何来表示对称.</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-md7x0hu">之前说过，对称最重要的是在<strong data-type="NodeStrong">“某种操作下的不变性”</strong>，所以我们先讨论正方形围绕中心点旋转，总共有4种对称操作：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-v0v2ier"><span class="img" style="display: block;"><img src="../assets/net-img-v2-ea725518c2d0724c7de425217cdc2700_720w-20220508215301-lqlxkyc.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-mp8x5vi">或许你觉得应该不止4种操作，比如转两圈，这可以等价于“保持不动”，而转45°，这会导致不对称（因为你会明显发现变化）。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-qtvbnvl">起始点是完全不用关心的：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-a6cgdna"><span class="img" style="display: block;"><img src="../assets/net-img-v2-ecd573c3ca5e16baeb54797a31703787_720w-20220508215301-f7347jh.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-8kdmk06">甚至是不是正方形也不重要：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-zq99o0k"><span class="img" style="display: block;"><img src="../assets/net-img-v2-5baba0a0e7078d20ae691f5d6bc2f699_720w-20220508215301-j1yxi9j.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-h38w7e5">是的，群只关心对称最本质、最抽象的性质。所以我们只关心操作，只需要把操作放到集合里。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-3ssswhq">要放进去我们必须要把操作给数学化，也就是符号化，我们起码有两种符号化的选择，类比于加法或者乘法：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-a2qjbs3"><span class="img" style="display: block;"><img src="../assets/net-img-v2-9419dc73bc973e11fc2d2e7062091a14_720w-20220508215301-6zwjivd.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-t0l5j0a">稍微解释一下，什么叫做类比于加法？比如我们通过类比于加法得到 <span data-subtype="math" data-content="\{ 0,r,2r,3r\}"></span> ，“保持不变”映射为了0，“旋转90°”映射为了 <span data-subtype="math" data-content="r"></span> ，而两个操作的依次进行映射为加法。所以“保持不变” + “旋转90°” ＝ <span data-subtype="math" data-content="0+r=r"></span> ＝ “旋转90°”，是合理。而“旋转90°” + “旋转90°” ＝ <span data-subtype="math" data-content="r+r=2r"></span> ＝ “旋转180°”，也是合理的。注意，运算不需要符合交换律。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-hzxyfqr">还要说明的一点是，这里的加法和乘法是模加法、模乘法（即先计算再求模），用钟表来类比，按照12小时制算， <span data-subtype="math" data-content="3+11=2"></span> ， <span data-subtype="math" data-content="3\times 6=6"></span> 。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-ewy11v4">这样我们就得到了两个群，一个是 <span data-subtype="math" data-content="(G,+)=(\{ 0,r,2r,3r\} ,+)"></span> ，一个是<span data-subtype="math" data-content="(G,\times )=(\{ 1,r,r^2,r^3\} ,\times )"></span> 。但是我们明明知道它们应该是一样的啊，只是符号不一样，运算不一样，所以我们可以称之为<strong data-type="NodeStrong">同构</strong>，就是结构相同的意思。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-g6qirec">这里先用到群的解析式了，下面就要解释一下。</p>
+<h5 id="2-3-群的定义" updated="20220508215209" data-type="NodeHeading" data-n-id="20220508215209-pwlybcj">2.3 群的定义<a id="vditorAnchor-2-3-群的定义" class="vditor-anchor" href="#2-3-群的定义"><img src="./../assets/icon/alink.png" /></a></h5>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-fv3lick">先祭出大杀器，群的标准定义：</p>
+<blockquote updated="20220508215209" data-type="NodeBlockquote" data-n-id="20220508215209-z081wgd">
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-jbtjbye">群是一个集合 <span data-subtype="math" data-content="G"></span> ，连同一个运算&quot; <span data-subtype="math" data-content="\cdot"></span> &quot;，它结合任何两个元素 <span data-subtype="math" data-content="a"></span> 和 <span data-subtype="math" data-content="b"></span> 而形成另一个元素，记为 <span data-subtype="math" data-content="a\cdot b"></span> 。符号&quot; <span data-subtype="math" data-content="\cdot"></span> &quot;是对具体给出的运算，比如整数加法的一般占位符。要具备成为群的资格，这个集合和运算 <span data-subtype="math" data-content="(G,\cdot )"></span> 必须满足叫做群公理的四个要求：</p>
+<ul start="0" updated="20220508215209" data-type="NodeList" data-n-id="20220508215209-g0we8mv">
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-q7ua5ol"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-7vhwc78">封闭性：对于所有 <span data-subtype="math" data-content="G"></span> 中 <span data-subtype="math" data-content="a,b"></span> ，运算 <span data-subtype="math" data-content="a\cdot b"></span> 的结果也在 <span data-subtype="math" data-content="G"></span> 中。</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-fdd6tks"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-74kriiy">结合性：对于所有 <span data-subtype="math" data-content="G"></span> 中的 <span data-subtype="math" data-content="a,b"></span> 和 <span data-subtype="math" data-content="c"></span> ，等式 <span data-subtype="math" data-content="(a\cdot b)\cdot c=a\cdot (b\cdot c)"></span> 成立。</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-8hred4g"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-54z85zz">单位元：存在 <span data-subtype="math" data-content="G"></span> 中的一个元素 <span data-subtype="math" data-content="e"></span> ，使得对于所有 <span data-subtype="math" data-content="G"></span> 中的元素 <span data-subtype="math" data-content="a"></span> ，等式<span data-subtype="math" data-content="e\cdot a=a\cdot e=a"></span> 成立。</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-xyi0s8u"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-cpzopqo">逆元：对于每个 <span data-subtype="math" data-content="G"></span> 中的 <span data-subtype="math" data-content="a"></span> ，存在 <span data-subtype="math" data-content="G"></span> 中的一个元素 <span data-subtype="math" data-content="b"></span> 使得 <span data-subtype="math" data-content="a\cdot b=b\cdot a=e"></span> ，这里的 <span data-subtype="math" data-content="e"></span> 是单位元。</p>
+</li>
+</ul>
+</blockquote>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-k6gfkwr">数学是自然科学的语言，和日常的说话相比最大的优点是精确没有歧义，缺点就是晦涩不好理解。群的定义也是这样，下面我们用人话来解释群。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-61u2j07">套用正方形的例子来解读群的定义，选 <span data-subtype="math" data-content="(G,+)=(\{ 0,r,2r,3r\} ,+)"></span> 这个群吧：</p>
+<ul start="0" updated="20220508215209" data-type="NodeList" data-n-id="20220508215209-xk6ge7j">
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-ea48iok"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-uzxfvt5">集合里的对象：所有保证对称性的操作。</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-l081z5a"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-w8tc3ce">二元运算：模加法。</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-8dsifwk"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-vu9wqiz">封闭性：操作相加还是在集合内，比如 <span data-subtype="math" data-content="r+2r=3r"></span> 。</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-dn1l3mh"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-v3fswab">结合性： <span data-subtype="math" data-content="r+3r+2r=r+(3r+2r)"></span> 。</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-tpqvpib"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-vifw9nh">单位元：保持不动就是单位元，映射为0，所以 <span data-subtype="math" data-content="0+r=r"></span> 。</p>
+</li>
+<li updated="20220508215209" data-type="NodeListItem" data-n-id="20220508215209-83o2gfr"><span class="ListItemDot"></span>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-ckk22zi">逆元：首先旋转正方形的操作是可逆的，所以 <span data-subtype="math" data-content="r+(-r)=0"></span> ，同时这还是一个循环的运算， <span data-subtype="math" data-content="r+3r=0"></span> ，都可以说是 <span data-subtype="math" data-content="r"></span> 的逆元。</p>
+</li>
+</ul>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-gm49hvb">其实吧，我可以再抽象一点， <span data-subtype="math" data-content="(G,+)=(\{ 0,r,2r,3r\} ,+)=(\{ 0,1,2,3\} ,+)"></span> ，这个群基本上已经没有原来正方形旋转的影子了。群比我们之前学的数学的抽象性更近了一步，要不怎么放在抽象代数课程里面呢？本文只是想稍微让群具体一点。</p>
+<h5 id="2-4-群的结构与同构" updated="20220508215209" data-type="NodeHeading" data-n-id="20220508215209-6042cr2">2.4 群的结构与同构<a id="vditorAnchor-2-4-群的结构与同构" class="vditor-anchor" href="#2-4-群的结构与同构"><img src="./../assets/icon/alink.png" /></a></h5>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-c85xntx">之前说过，正方形围绕中垂线翻转是不一样的对称</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-gr9r2zp"><span class="img" style="display: block;"><img src="../assets/net-img-v2-c04e7f532aa849546c4d020c5e9a04ae_720w-20220508215301-wvp586x.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-1bwknyz">上图我把运算直接表示为&quot; <span data-subtype="math" data-content="\cdot"></span> &quot;。这个群很明显和正方形围绕中心点旋转的群不一样，所以对称也就不一样，用群的术语来说就是，这<strong data-type="NodeStrong">两种群结构不一样</strong>。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-8rsja3v">现实中，还有各种各样的对称，比如正方形和圆：</p>
+<p style="text-align: center;" updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-3j0rlg9"><span class="img" style="display: block;"><img src="../assets/net-img-v2-388a596cf2668642e03eded89a6d9c41_720w-20220508215301-h3phbzt.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-yyeh301">这两种<strong data-type="NodeStrong">对称的结构也不同</strong>，对应的群也不一样。群论就是对各种群的研究。</p>
+<h5 id="2-5-进一步的思考" updated="20220508215209" data-type="NodeHeading" data-n-id="20220508215209-gzw1nwr">2.5 进一步的思考<a id="vditorAnchor-2-5-进一步的思考" class="vditor-anchor" href="#2-5-进一步的思考"><img src="./../assets/icon/alink.png" /></a></h5>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-iowbfu9">关于同构，这里再进一步思考，圆是有无数种对称操作的，之前提到的相对于时间对称的物理定律，也是有无数种对称操作的（因为时间是可以无限流逝的），从某种意义上讲，两者是不是同一种对称，也就是同构？如果是同构，那么我只要研究一个群就可以研究两者了。</p>
+<p updated="20220508215209" data-type="NodeParagraph" data-n-id="20220508215209-mxw4h38">思考，才是数学最大的乐趣所在。</p>
+<p updated="20220508215200" data-type="NodeParagraph" data-n-id="20220508215200-xr9kt09"></p>
+</main>
+</main>

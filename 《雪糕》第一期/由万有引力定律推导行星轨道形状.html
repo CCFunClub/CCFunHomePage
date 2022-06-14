@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="zh">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>由万有引力定律推导行星轨道形状</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css" />
+    
+
+    
+
+    
+    <script src="./../assets/front-end-lib/all_components.js"></script>
+    
+        
+        
+        
+
+
+    
+
+    <link rel="stylesheet" href="./../assets/js_css/theme.css">
+    <link rel="stylesheet" href="./../assets/js_css/github-markdown-css.css">
+</head>
+
+
+
+<main id="static_app_llej" class="markdown-body">
+    <main title="由万有引力定律推导行星轨道形状" updated="20220510204017" data-type="NodeDocument" data-n-id="20220510160159-ykt7uc2" updated="20220510204017" data-n-id="20220510160159-ykt7uc2"><h1 title="由万有引力定律推导行星轨道形状" updated="20220510204017" data-type="NodeDocument" data-n-id="20220510160159-ykt7uc2" updated="20220510204017" data-n-id="20220510160159-ykt7uc2">由万有引力定律推导行星轨道形状</h1>
+<p updated="20220510162412" data-type="NodeParagraph" data-n-id="20220510160210-jyww0g5">作者：王峰 - 知乎<br /></p>
+<p updated="20220510171005" data-type="NodeParagraph" data-n-id="20220510170930-o29nl9q"><em data-type="NodeEmphasis">前置知识：导数、圆锥曲线、引力定律、极坐标。</em></p>
+<p updated="20220510170203" data-type="NodeParagraph" data-n-id="20220510170127-khu1wtu">我们先给出圆锥曲线的极坐标方程的统一方程。</p>
+<p updated="20220510170202" data-type="NodeParagraph" data-n-id="20220510160210-ll84vun">先来推导椭圆的极坐标方程。把极点选在椭圆的一个焦点上，让极轴沿着椭圆的长轴指向远离另一焦点的方向，如图</p>
+<p style="text-align: center;" updated="20220510160210" data-type="NodeParagraph" data-n-id="20220510160210-js4qyas"><span class="img" style="display: inline-block;width: 470px;" style="display: block; max-width: 480px;"><img src="../assets/net-img-v2-8da7f9203a99a19b40aac53a44e6f767_b-20220510170214-eflv7za.jpg" alt="" parent-style="display: block; max-width: 480px;" style="width: 470px;" data-type="NodeImage" /></span></p>
+<p updated="20220510160306" data-type="NodeParagraph" data-n-id="20220510160210-co23tau">按照定义，椭圆是到两焦点的距离之和等于常数的点的轨迹。设这距离之和为常数 2a，设两焦点间的距离为2c，椭圆的方程应为 <span data-subtype="math" data-content="r+\sqrt{r^2+4c^2+4rccos\theta}=2a"></span></p>
+<p updated="20220510160328" data-type="NodeParagraph" data-n-id="20220510160210-abossoo">在上一方程中，先把左边的第一项 <span data-subtype="math" data-content="r"></span> 移到右边，再取两边的平方消去根号，我们得到</p>
+<div data-content="r^2+4c^2+4rccos\theta=r^2+4a^2-4ra" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510160210" data-type="NodeParagraph" data-n-id="20220510160210-omruse3">由此又可得到</p>
+<div data-content="r=\frac{b^2}{a+ccos\theta}=\frac{p}{1+ecos\theta} \tag{*}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510170101" data-type="NodeParagraph" data-n-id="20220510160210-9egss8t">这里 <span data-subtype="math" data-content="b=\sqrt{a^2-c^2}"></span> , <span data-subtype="math" data-content="p={b^2}/{a}"></span> , <span data-subtype="math" data-content="e={c}/{a}&lt;1"></span> 为离心率</p>
+<p updated="20220510160341" data-type="NodeParagraph" data-n-id="20220510160210-z9p00km">这样我们就得到了椭圆的极坐标方程 <span data-subtype="math" data-content="r=\frac{p}{1+ecos\theta}"></span>
+</p>
+<p updated="20220510170113" data-type="NodeParagraph" data-n-id="20220510162426-qxi3ofc">按照同样的方法，读者可自行验证 <span data-subtype="math" data-content=" (*)"></span> 也是双曲线在极坐标下的表达式，同样有<span data-subtype="math" data-content="e={c}/{a}&gt;1"></span> 为离心率。</p>
+<p updated="20220510171509" data-type="NodeParagraph" data-n-id="20220510171509-vyih1ib">下面推导抛物线的表达式。把极点选在抛物线的焦点上：</p>
+<p style="text-align: center;" updated="20220510165703" data-type="NodeParagraph" data-n-id="20220510165648-6fg3wdb"><span class="img" style="display: block;"><img src="../assets/image-20220510165703-yz88rzn.png" alt="image.png" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220510165854" data-type="NodeParagraph" data-n-id="20220510165644-g4t50ak">记 <span data-subtype="math" data-content="|PF|=r"></span>，<span data-subtype="math" data-content="P"></span> 到准线 <span data-subtype="math" data-content="l"></span> 的距离为 <span data-subtype="math" data-content="d"></span>，焦点到准线的距离为 <span data-subtype="math" data-content="p"></span>，由定义知 <span data-subtype="math" data-content="r/d=1"></span>，由图形可得 <span data-subtype="math" data-content="d=p+r \cos\theta"></span>，代入得 <span data-subtype="math" data-content="\frac{r}{p+r \cos\theta}=1"></span>，整理后得到极坐标方程：</p>
+<div data-content="r=\frac{p}{1-\cos\theta}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510170051" data-type="NodeParagraph" data-n-id="20220510165841-w0aenzc">于是我们就证明了圆锥曲线的极坐标方程的统一形式： <span data-subtype="math" data-content="r=\frac{p}{1+ecos\theta}"></span>， <span data-subtype="math" data-content="e"></span> 为离心率。当 <span data-subtype="math" data-content="e=0"></span> 时，轨迹为圆；<span data-subtype="math" data-content="0&lt;e&lt;1"></span> 时，轨迹为椭圆；<span data-subtype="math" data-content="e=1"></span> 时，轨迹为抛物线；<span data-subtype="math" data-content="e&gt;1"></span> 时，轨迹为双曲线。</p>
+<hr />
+<p updated="20220510170152" data-type="NodeParagraph" data-n-id="20220510170152-ge7pz5a">下面推导行星（视为质点）在引力下的运动轨迹。</p>
+<p updated="20220510162837" data-type="NodeParagraph" data-n-id="20220510160210-7z79ve6">采用极坐标，设极径方向上的单位矢量为 <span data-subtype="math" data-content="\vec{e}_r"></span>，又设<span data-subtype="math" data-content="~\vec{e}_\theta"></span>为垂直于前者并指向角度 <span data-subtype="math" data-content="\theta"></span> 增大方向的单位矢量（如图所示）</p>
+<p style="text-align: center;" updated="20220510163218" data-type="NodeParagraph" data-n-id="20220510160705-tvz3ylw"><span class="img" style="display: block;"><img src="../assets/image-20220510160705-ogiqqo7.png" alt="image.png" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220510160616" data-type="NodeParagraph" data-n-id="20220510160517-7effxjy">分解引力： <span data-subtype="math" data-content="\vec{F}=\vec{F}_r+\vec{F}_\theta"></span></p>
+<p updated="20220510160828" data-type="NodeParagraph" data-n-id="20220510160210-jcd1hny">其中， <span data-subtype="math" data-content="\vec{F}_r=-G\frac{Mm}{r^2}\vec{e}_r"></span> （万有引力定律）， <span data-subtype="math" data-content="\vec{F}_\theta=0"></span> .</p>
+<p updated="20220510160836" data-type="NodeParagraph" data-n-id="20220510160210-s88npl3">这里 M 是太阳的质量， m 是行星的质量，G 是万有引力常数。</p>
+<p updated="20220510163039" data-type="NodeParagraph" data-n-id="20220510160427-fk68q2t">极坐标下，牛顿第三定律的表示形式与直角系中的不同，因为坐标系方向<span data-subtype="math" data-content="\vec{e}_r,~\vec{e}_\theta"></span>也在不断改变。实际上，有</p>
+<div data-content="a_r=2\ddot{r}-r\dot{\theta}^2=F_r/m=-\frac{k}{r^2}
+\\
+a_\theta=2\dot{r}\dot{\theta}+r\ddot{\theta}=F_{\theta}/m=0" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510170557" data-type="NodeParagraph" data-n-id="20220510160210-2bj44qd">这里 <span data-subtype="math" data-content="k=GM"></span>. 后一方程两边乘以 <span data-subtype="math" data-content="r"></span> 得 <span data-subtype="math" data-content="2r\dot r\dot\theta+r^2\dot\theta=0"></span>，反向应用求导公式 <span data-subtype="math" data-content="\frac{\mathrm{d}}{\mathrm{d}x}\left( uv \right) =u\frac{\mathrm{d}v}{\mathrm{d}x}+v\frac{\mathrm{d}u}{\mathrm{d}x}"></span>，得到</p>
+<div data-content="\frac{\mathrm{d}}{\mathrm{d}t}\left( r^2\dot{\theta} \right) =0" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510170648" data-type="NodeParagraph" data-n-id="20220510161003-o9gdkgx">这意味着 <span data-subtype="math" data-content="r^2\dot\theta"></span> 在仅受向心力（这里是引力）时是一个常量，我们将其命名为角动量，记作 <span data-subtype="math" data-content="h"></span>.</p>
+<p updated="20220510161333" data-type="NodeParagraph" data-n-id="20220510160210-dpauu7p">角动量守恒，意味着面积速度等于常数 <span data-subtype="math" data-content="\dot A=\frac{1}{2}r^2\dot\theta=\frac{1}{2}h"></span>，即开普勒第二定律实际上是角动量守恒的结果。</p>
+<p updated="20220510161339" data-type="NodeParagraph" data-n-id="20220510160210-vhmj18b">再来考察方程 <span data-subtype="math" data-content="\ddot r-r\dot\theta^2=-\frac{k}{r^2}"></span> （1）</p>
+<p updated="20220510161416" data-type="NodeParagraph" data-n-id="20220510160210-g1kbv8l">记 <span data-subtype="math" data-content="u=1/r"></span>，则从 <span data-subtype="math" data-content="r^2\dot\theta=h"></span>，可得 <span data-subtype="math" data-content="\dot\theta=hu^2"></span></p>
+<p updated="20220510170349" data-type="NodeParagraph" data-n-id="20220510160210-xuustaj">根据复合函数求导法则 <span data-subtype="math" data-content="\frac{\mathrm{d}}{\mathrm{d}t}u\left( v\left( t \right) \right) =\frac{\mathrm{d}u}{\mathrm{d}v}\cdot \frac{\mathrm{d}v}{\mathrm{d}t}"></span>，有</p>
+<div data-content="\dot{r}=\frac{\mathrm{d}}{\mathrm{d}\theta}\left( \frac{1}{u} \right) \cdot \frac{\mathrm{d}\theta}{\mathrm{d}t}=-\frac{1}{u^2}\frac{\mathrm{d}u}{\mathrm{d}\theta}\cdot \dot{\theta}=-h\frac{\mathrm{d}u}{\mathrm{d}\theta}" data-subtype="math"><div spin="1"></div></div>
+<div data-content="\ddot{r}=\frac{\mathrm{d}}{\mathrm{d}t}\left( \dot{r} \right) =\frac{\mathrm{d}}{\mathrm{d}\theta}\left( -h\frac{\mathrm{d}u}{\mathrm{d}\theta} \right) \cdot \frac{\mathrm{d}\theta}{\mathrm{d}t}=-h\frac{\mathrm{d}^2u}{\mathrm{d}\theta ^2}\cdot \dot{\theta}=-h^2u^2\frac{\mathrm{d}^2u}{\mathrm{d}\theta ^2}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510161537" data-type="NodeParagraph" data-n-id="20220510160210-qruy5fg">方程（1）化成 <span data-subtype="math" data-content="-h^2u^2\frac{d^2u}{d\theta}-h^2u^3=-ku^2"></span>，即</p>
+<div data-content="\frac{d^2u}{d\theta^2}+u=\frac{k}{h^2}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510204017" data-type="NodeParagraph" data-n-id="20220510162247-q4o2gb3">这是一个二阶常系数线性微分方程，我们等到大学再系统学习。这里，读者可以自行验证它的一般解为</p>
+<div data-content="u=Bcos\theta+Csin\theta+\frac{k}{h^2}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510203924" data-type="NodeParagraph" data-n-id="20220510160210-0px2zqw">其中 B、C 为常数，上式用辅助角公式可写成 <span data-subtype="math" data-content="u=Lcos\left(\theta-\theta_0\right)+\frac{k}{h^2}"></span></p>
+<p updated="20220510162254" data-type="NodeParagraph" data-n-id="20220510160210-rcizv2u">其中 <span data-subtype="math" data-content="L=\sqrt{B^2+C^2}"></span> ， <span data-subtype="math" data-content="cos\theta_0=\frac{B}{\sqrt{B^2+C^2}}"></span> ， <span data-subtype="math" data-content="sin\theta_0=\frac{C}{\sqrt{B^2+C^2}}"></span></p>
+<p updated="20220510160210" data-type="NodeParagraph" data-n-id="20220510160210-7rzzko9">于是有</p>
+<div data-content="r=\frac{1}{u}=\frac{1}{Lcos\left(\theta-\theta_0\right)+\frac{k}{h^2}}=\frac{p}{1+ecos\left(\theta-\theta_0\right)}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510162301" data-type="NodeParagraph" data-n-id="20220510160210-m1p70q6">这里 <span data-subtype="math" data-content="e=\frac{h^2L}{k}"></span> ， <span data-subtype="math" data-content="p=\frac{h^2}{k}"></span></p>
+<p updated="20220510203728" data-type="NodeParagraph" data-n-id="20220510160210-zfazt7k">我们得到了圆锥曲线的一般方程 <span data-subtype="math" data-content="r=\frac{p}{1+ecos\left(\theta-\theta_0\right)}"></span>，说明行星轨迹为一种圆锥曲线。考虑到一般行星不会跑到无穷远去，它的轨道应该是一个椭圆。实际上，通过计算 <span data-subtype="math" data-content="e={h^2L}/{k}"></span> 可以得到圆锥曲线的离心率，假如角动量 <span data-subtype="math" data-content="h"></span> 足够大，即行星线速度足够大（角动量与线速度成正相关），那么它依然有可能以抛物线或双曲线轨迹运动至无穷远处。（如流浪地球，以及旅行者号等人造天体）</p>
+<p style="text-align: center;" updated="20220510164828" data-type="NodeParagraph" data-n-id="20220510164828-ke6626g"><span class="img" style="display: block;"><img src="../assets/image-20220510164828-pr3dz0x.png" alt="image.png" parent-style="display: block;" data-type="NodeImage" /></span></p>
+</main>
+</main>

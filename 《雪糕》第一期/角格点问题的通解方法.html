@@ -1,0 +1,69 @@
+
+<!doctype html>
+<html lang="zh">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>角格点问题的通解方法</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css" />
+    
+
+    
+
+    
+    <script src="./../assets/front-end-lib/all_components.js"></script>
+    
+        
+        
+        
+
+
+    
+
+    <link rel="stylesheet" href="./../assets/js_css/theme.css">
+    <link rel="stylesheet" href="./../assets/js_css/github-markdown-css.css">
+</head>
+
+
+
+<main id="static_app_llej" class="markdown-body">
+    <main title="角格点问题的通解方法" updated="20220508193359" data-type="NodeDocument" data-n-id="20220505095546-3vnbe6c" type="doc" updated="20220508193359" data-n-id="20220505095546-3vnbe6c"><h1 title="角格点问题的通解方法" updated="20220508193359" data-type="NodeDocument" data-n-id="20220505095546-3vnbe6c" type="doc" updated="20220508193359" data-n-id="20220505095546-3vnbe6c">角格点问题的通解方法</h1>
+<p updated="20220505095953" data-type="NodeParagraph" data-n-id="20220505095953-gb1qd18">作者：钫酸的祝福<br /></p>
+<p updated="20220505095953" data-type="NodeParagraph" data-n-id="20220505095953-kd8zg6z">最近网上开始流行这样子的题目</p>
+<p style="text-align: center;" updated="20220505095953" data-type="NodeParagraph" data-n-id="20220505095953-jrnexb9"><span class="img" style="display: inline-block;width: 235px;" style="max-width: 245px; display: block;"><img src="../assets/image-20220505095605-68bdjvi.png" alt="image.png" parent-style="max-width: 245px; display: block;" style="width: 235px;" data-type="NodeImage" /></span></p>
+<p updated="20220505213729" data-type="NodeParagraph" data-n-id="20220505095953-dkbi9xr">看似十分简单，实际上需要运用许多几何知识，而且辅助线的添加也是极其的困难</p>
+<p updated="20220505213758" data-type="NodeParagraph" data-n-id="20220505095953-eokwg9p">但是可以利用角元塞瓦定理来快速解答该问题</p>
+<h4 id="塞瓦定理" updated="20220505095953" data-type="NodeHeading" data-n-id="20220505095953-e1sx8jz">塞瓦定理<a id="vditorAnchor-塞瓦定理" class="vditor-anchor" href="#塞瓦定理"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220505095953" data-type="NodeParagraph" data-n-id="20220505095953-kfn23w7">在 <span data-subtype="math" data-content="\Delta ABC"></span> 中内任取一点 <span data-subtype="math" data-content="O"></span> ，延长 <span data-subtype="math" data-content="AO、BO、CO"></span> 分别交对边于 <span data-subtype="math" data-content="D、E、F"></span> 则</p>
+<div data-content="\left( {\frac{{AF}}{{FB}}} \right) \cdot\left( {\frac{{BD}}{{DC}}} \right) \cdot \left( {\frac{{CE}}{{EA}}} \right) = 1" data-subtype="math"><div spin="1"></div></div>
+<p style="text-align: center;" updated="20220505095953" data-type="NodeParagraph" data-n-id="20220505095953-45050ty"><span class="img" style="display: block;"><img src="../assets/net-img-v2-febefa582c1b5e9b30d513f625e2b745_b-20220505100032-0qw2km6.png" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<h4 id="角元塞瓦定理" updated="20220505095953" data-type="NodeHeading" data-n-id="20220505095953-hqr13y4">角元塞瓦定理<a id="vditorAnchor-角元塞瓦定理" class="vditor-anchor" href="#角元塞瓦定理"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220505100051" data-type="NodeParagraph" data-n-id="20220505095953-l3eqgf5">在上图 <span data-subtype="math" data-content="\Delta ABC"></span> 中内任取一点 <span data-subtype="math" data-content="O"></span> ，延长 <span data-subtype="math" data-content="AO、BO、CO"></span> 分别交对边于 <span data-subtype="math" data-content="D、E、F"></span> 则</p>
+<div data-content="\frac{{sinBAO}}{{sinOAC}} \cdot \frac{{sinACO}}{{sinOCB}} \cdot \frac{{sinCBO}}{{sinOBA}} = 1" data-subtype="math"><div spin="1"></div></div>
+<h4 id="应用定理解题" updated="20220505095953" data-type="NodeHeading" data-n-id="20220505095953-jf0pmah">应用定理解题<a id="vditorAnchor-应用定理解题" class="vditor-anchor" href="#应用定理解题"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220505095953" data-type="NodeParagraph" data-n-id="20220505095953-1hd2rct">现在我们可以回到开头的问题了</p>
+<p updated="20220505095953" data-type="NodeParagraph" data-n-id="20220505095953-v49ypgp">这是一道典型的角格点问题</p>
+<p updated="20220505095953" data-type="NodeParagraph" data-n-id="20220505095953-5iwnis7">设 <span data-subtype="math" data-content="∠DAC"></span> 为 <span data-subtype="math" data-content="x°"></span>，利用角元塞瓦定理可得</p>
+<div data-content="\sin 40^\circ \sin 50^\circ \sin \left( {40 - x} \right)^\circ= \sin 30^\circ \sin 20^\circ \sin x^\circ" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220505213618" data-type="NodeParagraph" data-n-id="20220505095953-qp36vaz">可得解集为 <span data-subtype="math" data-content="\left\{ {x\left| {x=180k - 150, k \in N^*} \right.} \right\}"></span>
+</p>
+<p updated="20220505100148" data-type="NodeParagraph" data-n-id="20220505095953-hnrhtul">因为 <span data-subtype="math" data-content="x"></span> 为锐角，得 <span data-subtype="math" data-content="x＝30"></span></p>
+<h4 id="定理的证明" updated="20220505221008" data-type="NodeHeading" data-n-id="20220505220742-lsurn2g">定理的证明<a id="vditorAnchor-定理的证明" class="vditor-anchor" href="#定理的证明"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220505221025" data-type="NodeParagraph" data-n-id="20220505221020-mravwzh">塞瓦定理的证明：</p>
+<p style="text-align: center;" updated="20220505220932" data-type="NodeParagraph" data-n-id="20220505220932-k12wmo6"><span class="img" style="display: block;"><img src="../assets/image-20220505220932-yg8htjw.png" alt="image.png" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<div data-content="{\frac {BD}{DC}}={\frac {\mathrm {S} _{\triangle ABD}}{\mathrm {S} _{\triangle ADC}}}={\frac {\mathrm {S} _{\triangle OBD}}{\mathrm {S} _{\triangle ODC}}}." data-subtype="math"><div spin="1"></div></div>
+<p updated="20220508193359" data-type="NodeParagraph" data-n-id="20220505220912-43mzqh5"> 由比例的性质，</p>
+<div data-content="{\frac {BD}{DC}}={\frac {\mathrm {S} _{\triangle ABD}-\mathrm {S} _{\triangle OBD}}{\mathrm {S} _{\triangle ADC}-\mathrm {S} _{\triangle ODC}}}={\frac {\mathrm {S} _{\triangle ABO}}{\mathrm {S} _{\triangle CAO}}}." data-subtype="math"><div spin="1"></div></div>
+<p updated="20220505220912" data-type="NodeParagraph" data-n-id="20220505220912-ehj25bo">同理</p>
+<div data-content="{\frac {CE}{EA}}={\frac {\mathrm {S} _{\triangle BCO}}{\mathrm {S} _{\triangle ABO}}},\;{\frac {AF}{FB}}={\frac {\mathrm {S} _{\triangle CAO}}{\mathrm {S} _{\triangle BCO}}}." data-subtype="math"><div spin="1"></div></div>
+<div data-content="\therefore \quad {\frac {BD}{DC}}\cdot {\frac {CE}{EA}}\cdot {\frac {AF}{FB}}={\frac {\mathrm {S} _{\triangle ABO}}{\mathrm {S} _{\triangle CAO}}}\cdot {\frac {\mathrm {S} _{\triangle BCO}}{\mathrm {S} _{\triangle ABO}}}\cdot {\frac {\mathrm {S} _{\triangle CAO}}{\mathrm {S} _{\triangle BCO}}}=1." data-subtype="math"><div spin="1"></div></div>
+<p updated="20220505221030" data-type="NodeParagraph" data-n-id="20220505220912-wvcs1wj">证毕。</p>
+<p updated="20220505221033" data-type="NodeParagraph" data-n-id="20220505095953-da5j6zm">角元塞瓦定理是塞瓦定理的推论，留给读者自证。</p>
+</main>
+</main>

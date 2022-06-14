@@ -1,0 +1,121 @@
+
+<!doctype html>
+<html lang="zh">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简明解释哥德尔不完备定理</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css" />
+    
+
+    
+
+    
+    <script src="./../assets/front-end-lib/all_components.js"></script>
+    
+        
+        
+        
+
+
+    
+
+    <link rel="stylesheet" href="./../assets/js_css/theme.css">
+    <link rel="stylesheet" href="./../assets/js_css/github-markdown-css.css">
+</head>
+
+
+
+<main id="static_app_llej" class="markdown-body">
+    <main title="简明解释哥德尔不完备定理" updated="20220508141051" data-type="NodeDocument" data-n-id="20220508134544-d292xdu" updated="20220508141051" data-n-id="20220508134544-d292xdu"><h1 title="简明解释哥德尔不完备定理" updated="20220508141051" data-type="NodeDocument" data-n-id="20220508134544-d292xdu" updated="20220508141051" data-n-id="20220508134544-d292xdu">简明解释哥德尔不完备定理</h1>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-ynoqyzj">作者：叶青杰翻译 -知乎<br /></p>
+<h4 id="哥德尔证明的原理" updated="20220508141051" data-type="NodeHeading" data-n-id="20220508141051-uk42bht">哥德尔证明的原理<a id="vditorAnchor-哥德尔证明的原理" class="vditor-anchor" href="#哥德尔证明的原理"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-tcgmovh">——每个数学系统都存在一些语句永远无法被证明。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-1fdx34k">1931年，奥地利逻辑学家库尔特·哥德尔（Kurt Gödel）取得了有史以来最惊人的智力成就之一。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-bnjh1qg">那个时代的数学家们为数学寻求坚实的基础：一系列基本的数学事实，或者说公理。它们既是一致的，即不会导致矛盾，同时也是完备的，以作为所有数学真理的基础。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-0jgq0ct">但是，哥德尔年仅25岁时发表的令人震惊的不完备定理彻底粉碎了这一梦想。 他证明了<strong data-type="NodeStrong">任何一个你假定的能作为数学基础的公理集都不可避免地是不完备的：总有一些关于数的事实不能被这些公理证明</strong>。他还说明甚至没有任何一个候选的公理集能够证明其自身的一致性。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-3r37xjj">他的不完备定理意味着不存在一个对万事万物皆适用的数学理论，可证明性和正确性也无法统一。数学家可以证明的内容取决于他们的初始假设，而非所有答案所依据的基本事实。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-ghq7das">自哥德尔发现定理以来的89年中，数学家们偶然发现了他的定理所预言的那些无法回答的问题。例如，哥德尔本人帮助建立了连续统假设（这与无穷集的大小有关）是无法判定的，正如停机问题，该问题询问对于随机输入，计算机程序将永远运行还是最终停止。不确定性问题甚至出现在物理学中，这表明哥德尔不完备定理不仅困扰了数学，而且以某种不被理解的方式困扰了现实。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-s78n8nl">下面是哥德尔如何证明定理的简要且非正式的描述。</p>
+<h4 id="哥德尔数" updated="20220508141051" data-type="NodeHeading" data-n-id="20220508141051-se8aov3">哥德尔数<a id="vditorAnchor-哥德尔数" class="vditor-anchor" href="#哥德尔数"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-yo2cgmw">哥德尔的主要策略是<strong data-type="NodeStrong">把关于某个公理系统的语句映射到一个特定的系统内的语句，即映射到一个关于数字的语句。这个映射使公理系统能够有效地谈论自身。</strong></p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-y4ok8a2">这个过程的<strong data-type="NodeStrong">第一步是将任何可能的数学语句或一系列语句映射到一个被称为<u>哥德尔数</u>的唯一数字。</strong></p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-kthv4lg">这个对哥德尔的方案略微修改后的版本是由欧内斯特·内格尔（Ernest Nagel）和詹姆士·纽曼（James Newman）在他们1958年出版的《哥德尔的证明》（《Gödel's Proof》）的书中提出的，始于用12个基本符号作为词汇来表达一系列基本公理。例如，用符号 <span data-subtype="math" data-content="\exists"></span> 表示存在，用符号 <span data-subtype="math" data-content="+"></span> 表示加法。重要的是，符号 <span data-subtype="math" data-content="s"></span> 表示“后继”，给出了表示特定数字的方法。例如，<span data-subtype="math" data-content="s0"></span> 指的是 <span data-subtype="math" data-content="1"></span> , <span data-subtype="math" data-content="ss0"></span> 指的是 <span data-subtype="math" data-content="2"></span> 。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-qr7noc4">这12个符号被分配到了从1至12的哥德尔数。</p>
+<div data-content="\begin{matrix}
+	\text{符号}&amp;		\text{哥德尔数}&amp;		\text{含义}\\
+	\hline
+	\sim&amp;		1&amp;		\text{非}\\
+	\hline
+	\lor&amp;		2&amp;		\text{或}\\
+	\hline
+	\supset&amp;		3&amp;		\text{如果}...\text{则}...\\
+	\hline
+	\exists&amp;		4&amp;		\text{存在}\\
+	\hline
+	=&amp;		5&amp;		\text{等于}\\
+	\hline
+	0&amp;		6&amp;		\text{零}\\
+	\hline
+	\mathrm{s}&amp;		7&amp;		\text{后继}\\
+	\hline
+	(&amp;		8&amp;		\text{标点符号}\\
+	\hline
+	)&amp;		9&amp;		\text{标点符号}\\
+	\hline
+	,&amp;		10&amp;		\text{标点符号}\\
+	\hline
+	+&amp;		11&amp;		\text{加}\\
+	\hline
+	\times&amp;		12&amp;		\text{乘}\\
+	\hline
+\end{matrix}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-03jeo4x">下一步，用字母表示变量，从 <span data-subtype="math" data-content="x,y,z"></span> 开始，映射到大于12的素数（即 <span data-subtype="math" data-content="13,17,19,..."></span> ）。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-ymb0eui">接下来，这些符号和变量的任意组合，即任何可以被构造的算术公式或公式序列，都将有自己的哥德尔数。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-zc44lg8">比如，考虑「 <span data-subtype="math" data-content="0=0"></span> 」。这个公式的三个符号对应的哥德尔数是 <span data-subtype="math" data-content="6,5,6"></span> 。哥德尔需要将这三个数字的序列改为一个唯一的数字，也就是其他符号序列不会生成的数字。 为此，他采用前三个质数（<span data-subtype="math" data-content="2,3,5"></span> ），将每个符号的哥德尔数作为这个序列相同位置的指数，并将它们相乘。因此 <span data-subtype="math" data-content="0=0"></span> 变为 <span data-subtype="math" data-content="2^6\times3^5\times5^6"></span> ，即 <span data-subtype="math" data-content="243000000"></span> 。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-zfq78j3">该映射之所以有效，是因为没有两个公式会有相同的哥德尔数。 哥德尔数是整数，而整数仅以一种方式分解为质数。因此，<span data-subtype="math" data-content="243000000"></span>的唯一质数分解是<span data-subtype="math" data-content="2^6\times3^5\times5^6"></span> ，这意味着只有一种可能的方法可以解码这个哥德尔数：公式<span data-subtype="math" data-content="0=0"></span>。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-740hd6s">哥德尔之后更进一步。数学证明是由一系列的公式组成的。因此，哥德尔也为每个公式序列赋予了唯一的哥德尔编号。在这种情况下，正如前面一样，他从质数列表开始，即 <span data-subtype="math" data-content="2,3,5"></span> 依此类推。 然后，他将公式的哥德尔数作为对应位置素数序列的指数（例如，若先出现 <span data-subtype="math" data-content="0=0"></span> ，则为 <span data-subtype="math" data-content="2^{243000000}\times..."></span> ），然后将所有数相乘。</p>
+<h4 id="算数元数学" updated="20220508141051" data-type="NodeHeading" data-n-id="20220508141051-ejhnz51">算数元数学<a id="vditorAnchor-算数元数学" class="vditor-anchor" href="#算数元数学"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-rs8l9xu">这么做真正的好处是，即使是<strong data-type="NodeStrong">关于</strong>算术公式的语句，也被称为<u>元数学语句</u>，也可以转换为以它们自身的哥德尔数所产生的公式。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-plfmz2d">首先考虑公式 <span data-subtype="math" data-content="\sim(0=0)"></span> ，意思是“零不等于零”。这个公式显然的错误的。不过它依然有哥德尔数：2的1次幂（符号 <span data-subtype="math" data-content="\sim"></span> 的哥德尔数是1），乘以3的8次幂（“左括号”的哥德尔数是8），依次类推，得到 <span data-subtype="math" data-content="2^1\times 3^8\times5^6\times7^5\times11^6\times 13^9"></span> 。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-pfck5xi">因为我们可以为所有公式甚至错误的公式生成哥德尔数，所以我们可以通过谈论它们的哥德尔数来明智地谈论这些公式。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-3hcpxal">考虑以下语句：“公式「 <span data-subtype="math" data-content="\sim(0=0)"></span>」 的第一个符号是波浪号”。这个关于 <span data-subtype="math" data-content="\sim(0=0)"></span> 的正确的元数学语句转化为关于公式的哥德尔数的语句，即其第一个指数为1，即波浪号的哥德尔数。 换句话说，我们的语句为<span data-subtype="math" data-content="2^1\times 3^8\times5^6\times7^5\times11^6\times 13^9"></span> 只有一个2因子。如果<span data-subtype="math" data-content="\sim(0=0)"></span>以除波浪号以外的任何符号开头，那么其哥德尔数至少应该有两个2因子。因此，更准确地说， <span data-subtype="math" data-content="2"></span> 是<span data-subtype="math" data-content="2^1\times 3^8\times5^6\times7^5\times11^6\times 13^9"></span> 的因子，但 <span data-subtype="math" data-content="2^2"></span> 不是因子。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-c24zi3c">我们可以将最后一个语句转换为精确的算术公式，即我们可以使用基本符号写下。这个公式当然有一个哥德尔数，我们可以通过将其符号映射到素数的幂上来进行计算。</p>
+<blockquote updated="20220508141051" data-type="NodeBlockquote" data-n-id="20220508141051-0t87n7k">
+<p data-type="NodeParagraph" data-n-id="20220508141051-noth12g">对于好奇的读者，这个语句可以读作“存在一个整数 <span data-subtype="math" data-content="x"></span> 使得 <span data-subtype="math" data-content="x"></span> 乘以2等于 <span data-subtype="math" data-content="2^1\times 3^8\times5^6\times7^5\times11^6\times 13^9"></span> ，且不存在一个整数 <span data-subtype="math" data-content="x"></span> 使得 <span data-subtype="math" data-content="x"></span> 乘以4等于 <span data-subtype="math" data-content="2^1\times 3^8\times5^6\times7^5\times11^6\times 13^9"></span> ”。对应的公式为 <span data-subtype="math" data-content="((\exists x)(x \times ss0 = sss … sss0)) \cdot (\sim(\exists x)(x \times ssss0 = sss … sss0))"></span>，其中 <span data-subtype="math" data-content="sss … sss0"></span> 表示有 <span data-subtype="math" data-content="2^1\times 3^8\times5^6\times7^5\times11^6\times 13^9"></span> 个后继符号 <span data-subtype="math" data-content="s"></span> 。符号 <span data-subtype="math" data-content="\cdot"></span> 意思是“且”，是基本词汇中较长表达的简写： <span data-subtype="math" data-content="p\cdot q"></span> 可以用 <span data-subtype="math" data-content="\sim(\sim p\vee \sim q)"></span> 替代。</p>
+</blockquote>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-udqya4u">对于这个例子，内格尔和纽曼写道“这说明了一个非常普遍且深刻的见解，它位于哥德尔发现的核心：<strong data-type="NodeStrong">长链符号的印刷性质可以以间接但完全准确的方式替代对大整数因式分解性质的讨论</strong>”。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-180a77x">对于元数学语句，转换为符号依然是可能的：“存在某个哥德尔数为 <span data-subtype="math" data-content="x"></span> 的公式序列，可以证明哥德尔数为 <span data-subtype="math" data-content="k"></span> 的公式”，或者简言之，“哥德尔数为 <span data-subtype="math" data-content="k"></span> 的公式可以被证明”。将此类语句“算术化”的能力为解决这个难题奠定了基础。</p>
+<h4 id="自指代" updated="20220508141051" data-type="NodeHeading" data-n-id="20220508141051-ecp8vy4">自指代<a id="vditorAnchor-自指代" class="vditor-anchor" href="#自指代"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-usulrkw">哥德尔的独到见解是，他<strong data-type="NodeStrong">可以用公式本身的哥德尔数代入到公式</strong>中，从而导致无穷无尽的麻烦。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-zivnuil">为了看出这个代入是如何起效的，考虑公式 <span data-subtype="math" data-content="(\exists x)(x=sy)"></span> （它读作“存在一个变量 <span data-subtype="math" data-content="x"></span> 使得它是 <span data-subtype="math" data-content="y"></span> 的后继”，或者简言之，“ <span data-subtype="math" data-content="y"></span> 有一个后继”）。像所有公式一样，它有哥德尔数，即某个大整数，我们就叫它 <span data-subtype="math" data-content="m"></span> 。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-7o1eh0v">现在让我们在公式中用 <span data-subtype="math" data-content="m"></span> 代替符号 <span data-subtype="math" data-content="y"></span> 。 这形成一个新公式 <span data-subtype="math" data-content="(\exists x)(x=sm)"></span> ，表示“ <span data-subtype="math" data-content="m"></span> 有一个后继”。 我们怎么记这个公式的哥德尔数呢？我们需要传达三点信息：我们从哥德尔数为 <span data-subtype="math" data-content="m"></span> 的公式开始。 在其中，我们用 <span data-subtype="math" data-content="m"></span> 代替了符号 <span data-subtype="math" data-content="y"></span> 。根据前面介绍的映射方案，符号 <span data-subtype="math" data-content="y"></span> 的哥德尔数为17。因此，让我们指定新公式的哥德尔数为 <span data-subtype="math" data-content="\mathrm{sub}(m,m,17)"></span> 。</p>
+<blockquote updated="20220508141051" data-type="NodeBlockquote" data-n-id="20220508141051-8b7maf6">
+<p data-type="NodeParagraph" data-n-id="20220508141051-a6rdrnq">译者注：这段是理解的难点，我们更仔细的再叙述一遍。在这段中，我们定义了一个函数 <span data-subtype="math" data-content="\mathrm{sub}"></span> ，这个函数一共有3个输入，他们都是正整数，我们记为 <span data-subtype="math" data-content="\mathrm{sub}(a,b,c)"></span> 。其中，第一个参数 <span data-subtype="math" data-content="a"></span> 是一个公式的哥德尔数，我们接收到 <span data-subtype="math" data-content="a"></span> 之后要把它解码成此哥德尔数所对应的公式。最后一个参数 <span data-subtype="math" data-content="c"></span> 指的是一个符号的哥德尔数，我们要找到 <span data-subtype="math" data-content="a"></span> 对应公式的所有哥德尔数为 <span data-subtype="math" data-content="c"></span> 的符号所对应的位置。最后，我们把刚才找到的位置全部替换成数字 <span data-subtype="math" data-content="b"></span> 。现在，我们计算这个修改后的公式的哥德尔数，这个数字就是 <span data-subtype="math" data-content="\mathrm{sub}(a,b,c)"></span> 。</p>
+</blockquote>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-wqfliob"><strong data-type="NodeStrong">替换构成了哥德尔证明的关键</strong>。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-lv6ue8c">他考虑下面一个元数学语句“无法证明哥德尔数为 <span data-subtype="math" data-content="\mathrm{sub}(y,y,17)"></span> 的公式”。回想一下我们刚刚学到的符号，哥德尔数为 <span data-subtype="math" data-content="\mathrm{sub}(y,y,17)"></span> 的公式是通过取哥德尔数为 <span data-subtype="math" data-content="y"></span> （某个未知量）的公式并将该变量 <span data-subtype="math" data-content="y"></span> 替换掉哥德尔数为17的符号（也是任何一个 <span data-subtype="math" data-content="y"></span> 的位置）。</p>
+<p updated="20220508141051" data-type="NodeParagraph" data-n-id="20220508141051-t0udfmy">事情变得令人迷惑，但是不管怎么说，我们的元数学语句“无法证明哥德尔数为 <span data-subtype="math" data-content="\mathrm{sub}(y,y,17)"></span> 的公式”肯定能转化为某个特定哥德尔数所对应的公式。 我们把这个数称为 <span data-subtype="math" data-content="n"></span> 。</p>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-larqwhk">现在进行最后一轮替换：哥德尔通过将数字 <span data-subtype="math" data-content="n"></span> 替换先前公式中 <span data-subtype="math" data-content="y"></span> 的位置来创建一个新公式。他的新公式声称：“无法证明哥德尔数为 <span data-subtype="math" data-content="\mathrm{sub}(n,n,17)"></span> 的公式”。我们将此新公式称为 <span data-subtype="math" data-content="G"></span> 。</p>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-hqhs1pc">自然， <span data-subtype="math" data-content="G"></span> 也有一个哥德尔数。那么它的值是什么呢？哇哦，它肯定是 <span data-subtype="math" data-content="\mathrm{sub}(n,n,17)"></span> ！根据定义， <span data-subtype="math" data-content="\mathrm{sub}(n,n,17)"></span> 是下面公式的哥德尔数，它是通过将哥德尔数为 <span data-subtype="math" data-content="n"></span> 的公式中对应哥德尔数为17的符号用 <span data-subtype="math" data-content="n"></span> 替代所得到的。而 <span data-subtype="math" data-content="G"></span> 正是这个公式！ 由于素数分解的唯一性，我们现在看到 <span data-subtype="math" data-content="G"></span> 所讨论的公式就是 <span data-subtype="math" data-content="G"></span> 本身。</p>
+<blockquote updated="20220508140259" data-type="NodeBlockquote" data-n-id="20220508134548-ab87wqg">
+<p updated="20220508140259" data-type="NodeParagraph" data-n-id="20220508134548-rl7mo44">译者注：这又是一个难点。我们更仔细的叙述如何计算 <span data-subtype="math" data-content="\mathrm{sub}(n,n,17)"></span> 。回忆我们前面的注，我们的第一步就是要解码 <span data-subtype="math" data-content="n"></span> 所对应的公式。根据前文，我们知道这对应了语句“无法证明哥德尔数为 <span data-subtype="math" data-content="\mathrm{sub}(y,y,17)"></span> 的公式”。第二步，我们要找到17所对应的符号，也就是 <span data-subtype="math" data-content="y"></span> 的所有位置，我们将找到的位置加个波浪线：“无法证明哥德尔数为 <span data-subtype="math" data-content="\mathrm{sub(}\tilde{y},\tilde{y},17)"></span> 的公式“。第三步，我们要把有波浪线的位置替换成 <span data-subtype="math" data-content="n"></span> ，也就是“无法证明哥德尔数为 <span data-subtype="math" data-content="\mathrm{sub}(n,n,17)"></span> 的公式“，而这正是公式 <span data-subtype="math" data-content="G"></span> 。</p>
+</blockquote>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-mibi1kn"><span data-subtype="math" data-content="G"></span> 断言自己无法被证明。</p>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-igvgaxc">但是 <span data-subtype="math" data-content="G"></span> 能被证明吗？如果是的话，则意味着存在某个公式序列，可以证明哥德尔数为<span data-subtype="math" data-content="\mathrm{sub}(n,n,17)"></span> 的公式。但这恰好与 <span data-subtype="math" data-content="G"></span> 相反，即 <span data-subtype="math" data-content="G"></span> 断言不存在这样的证明。相反的语句 <span data-subtype="math" data-content="G"></span> 和 <span data-subtype="math" data-content="\sim G"></span> 在一致的公理体系中不可能同时为真。因此， <span data-subtype="math" data-content="G"></span> 的正确与否必然无法被判定。</p>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-pc2feh1">然而，尽管 <span data-subtype="math" data-content="G"></span> 是无法被判定，它显然是对的。 <span data-subtype="math" data-content="G"></span> 意思是“无法证明哥德尔数为 <span data-subtype="math" data-content="\mathrm{sub}(n,n,17)"></span> 的公式”，而这正是我们所发现的事实。既然 <span data-subtype="math" data-content="G"></span> 是正确的，还是在此公理体系内构造的一个无法被判定的语句，说明了这个系统是不完备的。</p>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-le3hx3o">你可能认为你可以提出一些额外的公理，使用它们证明 <span data-subtype="math" data-content="G"></span> 并解决悖论。但是你不能。哥德尔说明了对于增强的公理系统将允许构建新的正确的公式 <span data-subtype="math" data-content="G'"></span> （根据与之前的方法类似），而该公式无法在新的增强系统中得到证明。在努力建立完备的数学系统时，你永远无法摆脱困境。</p>
+<h4 id="没有一致性的证明" updated="20220508140350" data-type="NodeHeading" data-n-id="20220508134548-y01vpw3">没有一致性的证明<a id="vditorAnchor-没有一致性的证明" class="vditor-anchor" href="#没有一致性的证明"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-waxooeb">我们学到了如果公理集是一致的，则它是不完备的。这是哥德尔第一不完备定理。第二定理，即没有一套公理可以证明其自身的一致性，由此易得。</p>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-gs1u0ir">如果公理集可以证明它永远不会产生矛盾，那意味着什么？这意味着存在根据这些公理构建的一系列公式，证明了这个含义为“这组公理是一致的”的元数学公式。由第一定理，这个公理集必然是不完备的。</p>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-08j8hq5">但是，“公理集是不完备的”与“有一个无法被证明的正确的公式”含义相同。这个语句等价于我们的公式 <span data-subtype="math" data-content="G"></span> 。我们知道公理不能证明 <span data-subtype="math" data-content="G"></span> 。</p>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-sqoxghg">因此，哥德尔创造了一个矛盾的证明：如果公理集可以证明其自身的一致性，那么我们将能够证明 <span data-subtype="math" data-content="G"></span> 。但是我们不能。因此，没有一组公理可以证明其自身的一致性。</p>
+<p updated="20220508134548" data-type="NodeParagraph" data-n-id="20220508134548-zxz9hsh">哥德尔的证明扼杀了对一个一致和完备的数学系统的追求。内格尔和纽曼在1958年写道，不完备性的含义“还没有被完全理解”。直到今天仍然如此。</p>
+</main>
+</main>

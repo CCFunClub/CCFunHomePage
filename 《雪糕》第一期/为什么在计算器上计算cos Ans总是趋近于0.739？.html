@@ -1,0 +1,64 @@
+
+<!doctype html>
+<html lang="zh">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>为什么在计算器上计算cos Ans总是趋近于0.739？</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css" />
+    
+
+    
+
+    
+    <script src="./../assets/front-end-lib/all_components.js"></script>
+    
+        
+        
+        
+
+
+    
+
+    <link rel="stylesheet" href="./../assets/js_css/theme.css">
+    <link rel="stylesheet" href="./../assets/js_css/github-markdown-css.css">
+</head>
+
+
+
+<main id="static_app_llej" class="markdown-body">
+    <main title="为什么在计算器上计算cos Ans总是趋近于0.739？" updated="20220508144551" data-type="NodeDocument" data-n-id="20220508144546-5xkt7sb" updated="20220508191217" data-n-id="20220508144546-5xkt7sb"><h1 title="为什么在计算器上计算cos Ans总是趋近于0.739？" updated="20220508144551" data-type="NodeDocument" data-n-id="20220508144546-5xkt7sb" updated="20220508191217" data-n-id="20220508144546-5xkt7sb">为什么在计算器上计算cos Ans总是趋近于0.739？</h1>
+<p updated="20220508144658" data-type="NodeParagraph" data-n-id="20220508144551-qpazbf2">作者：電卓院亜紀良 - 知乎<br /></p>
+<p updated="20220508144632" data-type="NodeParagraph" data-n-id="20220508144551-t1eelo9">这个过程实际上是数值计算方法中解方程的迭代方法之一——<strong data-type="NodeStrong">不动点迭代法</strong>（也称为<strong data-type="NodeStrong">简单迭代法</strong>）。</p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-391rnya">单行显示的计算器上输入一个数之后一直按[cos]键，或者双行显示以及其他更高级显示方式的计算器上输入一个数并计算之后，然后输入“cos(Ans)”再一直按[=]键，都是这样的过程。（注意是弧度制，角度单位必须统一，否则这样的迭代过程没有意义。）</p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-hullewg">在这个过程中，把每一次计算的结果（设为x）作为cos函数的自变量执行cos(x)的计算，这个计算的结果又被当成x，然后再计算cos(x)……如此循环往复，最后其实就是得到了方程x＝cos(x)的数值解。例如fx-991CN X是这样算的：</p>
+<p style="text-align: center;" updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-m9nnptj"><span class="img" style="display: block;"><img src="../assets/net-img-v2-e374320e1791eedd0346cdb322226f8b_720w-20220508144653-5k0bz0a.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-bpr06l7">我们再把这个过程放到函数图象上看，这时就很清晰了：</p>
+<p style="text-align: center;" updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-bdd25qd"><span class="img" style="display: block;"><img src="../assets/net-img-v2-a337778b06f4341418c34e9c8e14dd9b_720w-20220508144653-m6jthww.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-ma5xmo4">假设我们从y＝x＝1开始，红色的箭头是迭代过程，黄色的圆圈所圈出的点就是每一步迭代计算的结果。黄色的圆圈逐渐逼近y＝x和y＝cos(x)的交点，不断地重复计算，这个圆圈所圈出来的点的纵坐标就越接近方程x＝cos(x)的解。</p>
+<hr />
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-u0el7oy">有朋友需要继续讲一讲不动点迭代法的收敛性，也有朋友询问这个方法的用途，这里就再补充一下好了。用途当然就是解一些难以手算求解的方程了，不过速度会有些慢。</p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-r8w1cgk">我们先给出不动点迭代法（简单迭代法）的两个收敛定理（相关证明可以参考一些数值分析的教材）</p>
+<p updated="20220508144605" data-type="NodeParagraph" data-n-id="20220508144551-vjeraka"><strong data-type="NodeStrong">定理1　大范围收敛定理</strong><br />设函数 <span data-subtype="math" data-content="\varphi(x)"></span> 在 <span data-subtype="math" data-content="[a,b]"></span> 上连续，在 <span data-subtype="math" data-content="(a,b)"></span> 上可导，且满足以下两个条件：<br />（1）当 <span data-subtype="math" data-content="x\in[a,b]"></span> 时， <span data-subtype="math" data-content="\varphi(x)\in[a,b]"></span> ；<br />（2）当 <span data-subtype="math" data-content="x\in(a,b)"></span> 时， <span data-subtype="math" data-content="|\varphi'(x)|\leq M&lt;1"></span> ，其中 <span data-subtype="math" data-content="M"></span> 为一常数。<br />则有如下结论：<br />（1）方程 <span data-subtype="math" data-content="x=\varphi(x)"></span> 在 <span data-subtype="math" data-content="[a,b]"></span> 上有唯一的根 <span data-subtype="math" data-content="s"></span> ；<br />（2）对 <span data-subtype="math" data-content="\forall x_0\in[a,b]"></span> ，迭代公式 <span data-subtype="math" data-content="x_{n+1}=\varphi(x_n)"></span> 产生的数列 <span data-subtype="math" data-content="\{x_n\}\subset[a,b]"></span> 且收敛于 <span data-subtype="math" data-content="s"></span> <br /></p>
+<p updated="20220508144607" data-type="NodeParagraph" data-n-id="20220508144607-s7hay85"><strong data-type="NodeStrong">定理2　局部收敛定理</strong><br />设 <span data-subtype="math" data-content="s=\varphi(s)"></span> ， <span data-subtype="math" data-content="\varphi'(x)"></span> 在包含 <span data-subtype="math" data-content="s"></span> 的某个开区间内连续。如果 <span data-subtype="math" data-content="|\varphi'(s)|&lt;1"></span> ，则存在 <span data-subtype="math" data-content="\delta&gt;0"></span> ，当 <span data-subtype="math" data-content="x_0\in[s-\delta,s+\delta]"></span> 时，由迭代公式 <span data-subtype="math" data-content="x_{n+1}=\varphi(x_n)"></span> 产生的数列 <span data-subtype="math" data-content="\{x_n\}\subset[s-\delta,s+\delta]"></span> 且收敛于 <span data-subtype="math" data-content="s"></span> 。<br /></p>
+<p updated="20220508191047" data-type="NodeParagraph" data-n-id="20220508191047-0qtv0t3">定理1指定了一个固定的区间 <span data-subtype="math" data-content="[a,b]"></span> ，在这个区间里面任取一点 <span data-subtype="math" data-content="x_0"></span> 作为初始值，迭代都是收敛的。<br />定理2没有指出 <span data-subtype="math" data-content="\delta"></span> 的值是多少，只是说明了它的存在性。所以在满足定理2的条件时，只要 <span data-subtype="math" data-content="x_0"></span> 足够接近 <span data-subtype="math" data-content="s"></span> ，迭代公式产生的数列都能收敛于 <span data-subtype="math" data-content="s"></span> 。</p>
+<p updated="20220508144702" data-type="NodeParagraph" data-n-id="20220508144551-lwkh9ad">我们回到原来的问题中。迭代公式 <span data-subtype="math" data-content="x=\varphi(x)=\mathrm{cos}(x)"></span> ，根据定理1，<br />“随便在计算器上按个数”的意思就是任取一个 <span data-subtype="math" data-content="x=x_0"></span> ，那么第一次按下[cos]键或执行“cos(Ans)”计算都能使得 <span data-subtype="math" data-content="x_1=\varphi(x_0)=\mathrm{cos}(x_0)\in[-1,1]"></span> ；<br />再迭代一次， <span data-subtype="math" data-content="x_2=\varphi(x_1)=\mathrm{cos}(x_1)\in[\mathrm{cos}(1),1]\subset[0,1]"></span> ，<br />根据余弦函数的性质，对于 <span data-subtype="math" data-content="n&gt;1"></span> 以后的 <span data-subtype="math" data-content="x_n"></span> ，都能满足 <span data-subtype="math" data-content="x_{n+1}=\varphi(x_{n})=\mathrm{cos}(x_{n})\in[0,1]"></span> 。</p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-pn3lh95">然后这个时候的 <span data-subtype="math" data-content="x_n\in(0,1)"></span> 时，都有<span data-subtype="math" data-content="|\varphi'(x_n)|=|-\mathrm{sin}(x_n)|\in(0,\mathrm{sin}(1))\subset(0,1)"></span> ，<br />即 <span data-subtype="math" data-content="|\varphi'(x)|\leq\mathrm{sin}(1)&lt;1"></span> 。<br />这样定理1的两个条件都满足了，当然也就能确定以下结论：</p>
+<p updated="20220508144613" data-type="NodeParagraph" data-n-id="20220508144551-l0vqv9z">（1）方程 <span data-subtype="math" data-content="x=\mathrm{cos}(x)"></span> 在 <span data-subtype="math" data-content="[0,1]"></span> 上有唯一的根 <span data-subtype="math" data-content="s"></span> ；<br />（2）对 <span data-subtype="math" data-content="\forall x_0\in[0,1]"></span> ，迭代公式 <span data-subtype="math" data-content="x_{n+1}=\mathrm{cos}(x_{n})"></span> 产生的数列 <span data-subtype="math" data-content="\{x_n\}\subset[0,1]"></span> 且收敛于 <span data-subtype="math" data-content="s"></span> </p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-t61r26z">经过计算器实际的计算，我们可以得到 <span data-subtype="math" data-content="s=0.7390851332\cdots"></span> 。</p>
+<hr />
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-zly9ird"><strong data-type="NodeStrong">我们再举一个例子：求解方程</strong> <span data-subtype="math" data-content="x-\mathrm{ln}\ x=2"></span> <strong data-type="NodeStrong">。</strong></p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-bj4wl2h">构造函数 <span data-subtype="math" data-content="f(x)=x-\mathrm{ln}\ x-2"></span> ，我们可以发现：<br /><span data-subtype="math" data-content="f(2)=-\mathrm{ln}\ 2&lt;0"></span> ， <span data-subtype="math" data-content="f(4)=2-\mathrm{ln}\ 4=2-2\mathrm{ln}\ 2&gt;0"></span> ，<br />且当 <span data-subtype="math" data-content="x&gt;1"></span> 时， <span data-subtype="math" data-content="f'(x)=1-\frac{1}{x}&gt;0"></span> 。</p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-94688sn">把这个方程写成迭代的形式： <span data-subtype="math" data-content="x=\varphi(x)=\mathrm{ln}\ x+2"></span> ，根据定理1，<br /><span data-subtype="math" data-content="\varphi(x)\in[2+\mathrm{ln}\ 2,2+\mathrm{ln}\ 4]\subset[2,4]"></span><br /><span data-subtype="math" data-content="|\varphi'(x)|=\frac{1}{x}&lt;0.5&lt;1\ ,\ x\in(2,4)"></span><br />由定理1可知在 <span data-subtype="math" data-content="[2,4]"></span> 上必有一个根，且在区间 <span data-subtype="math" data-content="[2,4]"></span> 内任取迭代的初始值，数列 <span data-subtype="math" data-content="\{x_n\}"></span> 必定会收敛于根 <span data-subtype="math" data-content="s"></span> 。</p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-7w6c6mv">例如取 <span data-subtype="math" data-content="x_0=3"></span> ，然后开始迭代。</p>
+<p updated="20220508191217" data-type="NodeParagraph" data-n-id="20220508144551-cb8mmao">我们仍然使用CASIO fx-991CN X计算器，为了更方便地看清迭代的过程，先把计算器设置为线性输入方式，再输入迭代式 ln(Ans)+2，然后一直按[=]，得到下面的结果：</p>
+<p style="text-align: center;" updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-xexcjeq"><span class="img" style="display: block;"><img src="../assets/net-img-v2-4c6ac1dce92ddfe2ecae625da3ebb18b_720w-20220508144653-tqcj1yk.jpg" alt="" parent-style="display: block;" data-type="NodeImage" /></span></p>
+<p updated="20220508144551" data-type="NodeParagraph" data-n-id="20220508144551-arcg1ai">所以方程 <span data-subtype="math" data-content="x-\mathrm{ln}\ x=2"></span> 的近似根就是 <span data-subtype="math" data-content="s\approx3.146193221"></span> ，计算器给出的这个结果能保证显示的10位有效数字都是足够精确的。</p>
+</main>
+</main>

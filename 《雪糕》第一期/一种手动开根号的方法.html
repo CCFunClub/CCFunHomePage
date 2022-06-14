@@ -1,0 +1,70 @@
+
+<!doctype html>
+<html lang="zh">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一种手动开根号的方法</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css" />
+    
+
+    
+
+    
+    <script src="./../assets/front-end-lib/all_components.js"></script>
+    
+        
+        
+        
+
+
+    
+
+    <link rel="stylesheet" href="./../assets/js_css/theme.css">
+    <link rel="stylesheet" href="./../assets/js_css/github-markdown-css.css">
+</head>
+
+
+
+<main id="static_app_llej" class="markdown-body">
+    <main title="一种手动开根号的方法" updated="20220510205537" data-type="NodeDocument" data-n-id="20220510153409-dmm0eeo" updated="20220510205537" data-n-id="20220510153409-dmm0eeo"><h1 title="一种手动开根号的方法" updated="20220510205537" data-type="NodeDocument" data-n-id="20220510153409-dmm0eeo" updated="20220510205537" data-n-id="20220510153409-dmm0eeo">一种手动开根号的方法</h1>
+<p updated="20220510154014" data-type="NodeParagraph" data-n-id="20220510153505-3mzyglk">作者：董靖许 - 知乎<br /></p>
+<p updated="20220510153505" data-type="NodeParagraph" data-n-id="20220510153505-64w6fr9">首先，我们知道 <span data-subtype="math" data-content="1 &lt; \sqrt{3} &lt; 2"></span> ，于是我们就有<span data-subtype="math" data-content="0 &lt; \sqrt{3} - 1 &lt; 1. "></span>
+</p>
+<p updated="20220510153505" data-type="NodeParagraph" data-n-id="20220510153505-v3gm63s">对上述不等式进行平方，可得<span data-subtype="math" data-content="0 &lt; \left( \sqrt{3} - 1 \right)^2 &lt; 1, "></span>
+</p>
+<p updated="20220510153505" data-type="NodeParagraph" data-n-id="20220510153505-tbq32va">即<span data-subtype="math" data-content="0 &lt; 4 - 2\sqrt{3} &lt; 1, "></span>
+</p>
+<p updated="20220510153505" data-type="NodeParagraph" data-n-id="20220510153505-8ncid57">即<span data-subtype="math" data-content="0 &lt; 2 - \sqrt{3} &lt; \frac{1}{2}, "></span>
+</p>
+<p updated="20220510153518" data-type="NodeParagraph" data-n-id="20220510153505-d8mr1c4">这表示 <span data-subtype="math" data-content="\sqrt{3}"></span> 比 <span data-subtype="math" data-content="2"></span> 小，且将 <span data-subtype="math" data-content="2"></span> 作为 <span data-subtype="math" data-content="\sqrt{3}"></span> 的近似值时，误差不超过 <span data-subtype="math" data-content="\frac{1}{2}"></span> . 当然，这个结论就算不这样折腾一番你也能够轻松得到(毕竟 <span data-subtype="math" data-content="1.5^2 &lt; 3"></span> 而 <span data-subtype="math" data-content="2^2 &lt; 3"></span> 嘛)，但别急，我们还没完.</p>
+<p updated="20220510153505" data-type="NodeParagraph" data-n-id="20220510153505-aire1vh">对上述不等式再平方，有<span data-subtype="math" data-content="0 &lt; \left( 2 - \sqrt{3} \right)^2 &lt; \frac{1}{4}, "></span>
+</p>
+<p updated="20220510153534" data-type="NodeParagraph" data-n-id="20220510153505-z074mtt">即<span data-subtype="math" data-content="0 &lt; 7 - 4 \sqrt{3} &lt; \frac{1}{4}, "></span> 即<span data-subtype="math" data-content="0 &lt; \frac{7}{4} - \sqrt{3} &lt; \frac{1}{16}, "></span></p>
+<p updated="20220510153505" data-type="NodeParagraph" data-n-id="20220510153505-2kuk1ok">这说明 <span data-subtype="math" data-content="\frac{7}{4}"></span> 比 <span data-subtype="math" data-content="\sqrt{3}"></span> 大，且如果用 <span data-subtype="math" data-content="\frac{7}{4}"></span> 作为 <span data-subtype="math" data-content="\sqrt{3}"></span> 的近似值，误差小于 <span data-subtype="math" data-content="\frac{1}{16}"></span> .</p>
+<p updated="20220510153505" data-type="NodeParagraph" data-n-id="20220510153505-z546b13">将不等式 <span data-subtype="math" data-content="0 &lt; 7 - 4\sqrt{3} &lt; \frac{1}{4}"></span> 再平方，即有<span data-subtype="math" data-content="0 &lt; 97 - 56 \sqrt{3} &lt; \frac{1}{16}, "></span>
+</p>
+<p updated="20220510153542" data-type="NodeParagraph" data-n-id="20220510153505-wp39mbx">即<span data-subtype="math" data-content="0 &lt; \frac{97}{56} - \sqrt{3} &lt; \frac{1}{896}, "></span> 这说明 <span data-subtype="math" data-content="\sqrt{3} \approx \frac{97}{56}"></span> ，且误差小于 <span data-subtype="math" data-content="\frac{1}{896}"></span> .</p>
+<p updated="20220510153559" data-type="NodeParagraph" data-n-id="20220510153505-fh8ji5b">到了这里你应该已经能够看出一些端倪了. 如果还想知道 <span data-subtype="math" data-content="\sqrt{3}"></span> 的更加精确的近似值，那么可以继续对不等式进行平方.</p>
+<p updated="20220510153658" data-type="NodeParagraph" data-n-id="20220510153505-0j3a22p">实际上，上述方法对于求任何正数 <span data-subtype="math" data-content="x &gt; 0"></span> 的算术平方根 <span data-subtype="math" data-content="\sqrt{x}"></span> 都是适用的. </p>
+<p updated="20220510153901" data-type="NodeParagraph" data-n-id="20220510153505-vdup4gy">设 <span data-subtype="math" data-content="r_0"></span> 是任意正数，其与 <span data-subtype="math" data-content="\sqrt{x}"></span> 之差的绝对值不超过 <span data-subtype="math" data-content="\varepsilon_0"></span> . 那么，由</p>
+<div data-content="0 &lt; |r_0 - \sqrt{x}| &lt; \varepsilon_0," data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510153907" data-type="NodeParagraph" data-n-id="20220510153907-82tlfr3">可得</p>
+<div data-content="0 &lt; \left( \frac{r_0}{2} + \frac{x}{2r_0} \right) - \sqrt{x} &lt; \frac{\varepsilon_0^2}{2r_0}," data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510153913" data-type="NodeParagraph" data-n-id="20220510153505-mo0bdp2">记 <span data-subtype="math" data-content="\frac{r_0}{2} + \frac{x}{2r_0} = r_1"></span> ， <span data-subtype="math" data-content="\frac{\varepsilon_0^2}{2r_0} = \varepsilon_1"></span> ，上式就可以写为 <span data-subtype="math" data-content="0 &lt; r_1 - \sqrt{x} &lt; \varepsilon_1. "></span></p>
+<p updated="20220510153505" data-type="NodeParagraph" data-n-id="20220510153505-lj979ni">对上述不等式进行同样的操作，以 <span data-subtype="math" data-content="r_1"></span> 和 <span data-subtype="math" data-content="\varepsilon_1"></span> 代入前面的 <span data-subtype="math" data-content="r_0"></span> 和 <span data-subtype="math" data-content="\varepsilon_0"></span> ，并将所得到的新的 <span data-subtype="math" data-content="r_1"></span> 和 <span data-subtype="math" data-content="\varepsilon_1"></span> 记作 <span data-subtype="math" data-content="r_2"></span> 和 <span data-subtype="math" data-content="\varepsilon_2"></span> . 再继续对新的不等式操作，可得 <span data-subtype="math" data-content="r_3"></span> 和 <span data-subtype="math" data-content="\varepsilon_3"></span> ，乃至 <span data-subtype="math" data-content="r_n"></span> 和 <span data-subtype="math" data-content="\varepsilon_n"></span> ( <span data-subtype="math" data-content="n \in \mathbb{N}"></span> ). 可以看到，有递推关系</p>
+<div data-content="r_n = \frac{r_{n-1}}{2} + \frac{x}{2r_{n-1}},\\
+\varepsilon_n = \frac{\varepsilon_{n-1}^2}{2r_{n-1}}," data-subtype="math"><div spin="1"></div></div>
+<p updated="20220510153939" data-type="NodeParagraph" data-n-id="20220510153505-mjxh309">它们满足 <span data-subtype="math" data-content="0 &lt; r_n - \sqrt{x} &lt; \varepsilon_n. "></span></p>
+<p updated="20220510153945" data-type="NodeParagraph" data-n-id="20220510153505-rdtk9yk">不难证明，当 <span data-subtype="math" data-content="\frac{\varepsilon_0}{2r_0} &lt; 1"></span> 时，所得到的一列数 <span data-subtype="math" data-content="r_0, r_1, \cdots, r_n, \cdots "></span>将越来越接近 <span data-subtype="math" data-content="\sqrt{x}"></span> ，该数列的极限也正是 <span data-subtype="math" data-content="\sqrt{x}"></span> . 故可使用 <span data-subtype="math" data-content="r_n"></span> 作为 <span data-subtype="math" data-content="\sqrt{x}"></span> 的近似值.</p>
+<p updated="20220510205530" data-type="NodeParagraph" data-n-id="20220510153505-zxql63u">更广泛地说，这其实可以认为是<strong data-type="NodeStrong">不动点迭代法</strong><em data-type="NodeEmphasis">（按：见上一篇文章）</em>。</p>
+<p updated="20220510205441" data-type="NodeParagraph" data-n-id="20220510153435-gnz6e3i"><em data-type="NodeEmphasis">按：考虑 <span data-subtype="math" data-content="r_n = \frac{r_{n-1}}{2} + \frac{x}{2r_{n-1}}"></span>，我们实际上是在用不动点迭代法求方程 <span data-subtype="math" data-content="r=\frac{r}{2}+\frac{x}{2r}"></span> 的根，而该方程与 <span data-subtype="math" data-content="r^2=x"></span> 是同解的。</em></p>
+<p updated="20220510205537" data-type="NodeParagraph" data-n-id="20220510205537-gkym28z"></p>
+</main>
+</main>

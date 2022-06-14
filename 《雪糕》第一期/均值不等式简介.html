@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="zh">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>均值不等式简介</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css" />
+    
+
+    
+
+    
+    <script src="./../assets/front-end-lib/all_components.js"></script>
+    
+        
+        
+        
+
+
+    
+
+    <link rel="stylesheet" href="./../assets/js_css/theme.css">
+    <link rel="stylesheet" href="./../assets/js_css/github-markdown-css.css">
+</head>
+
+
+
+<main id="static_app_llej" class="markdown-body">
+    <main title="均值不等式简介" updated="20220506101354" data-type="NodeDocument" data-n-id="20220505085045-051aast" updated="20220506190228" data-n-id="20220505085045-051aast"><h1 title="均值不等式简介" updated="20220506101354" data-type="NodeDocument" data-n-id="20220505085045-051aast" updated="20220506190228" data-n-id="20220505085045-051aast">均值不等式简介</h1>
+<p updated="20220506190228" data-type="NodeParagraph" data-n-id="20220506101354-5c7wcyo">作者：钫酸的祝福</p>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-q4ebqhf">对于 <span data-subtype="math" data-content="n"></span> 个数，可以定义它们的若干平均数：</p>
+<div data-content="{\mathop{\rm H}\nolimits} _n = \frac{n}{{\sum\limits_{i = 1}^n {\frac{1}{{{x_i}}}} }} = \frac{n}{{\frac{1}{{{x_1}}} + \frac{1}{{{x_2}}} +  \cdots  + \frac{1}{{{x_n}}}}}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-628bsvl">被称为<strong data-type="NodeStrong"><a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%25E8%25B0%2583%25E5%2592%258C%25E5%25B9%25B3%25E5%259D%2587%25E6%2595%25B0">调和平均数</a></strong>。</p>
+<div data-content="G_n = \sqrt[n]{{\prod\limits_{i = 1}^n {{x_i}} }} = \sqrt[n]{{{x_1}{x_2} \cdots {x_n}}}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-4yh1ja3">被称为<strong data-type="NodeStrong"><a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%25E5%2587%25A0%25E4%25BD%2595%25E5%25B9%25B3%25E5%259D%2587%25E6%2595%25B0">几何平均数</a></strong>。</p>
+<div data-content="A_n = \frac{{\sum\limits_{i = 1}^n {{x_i}} }}{n} = \frac{{{x_1} + {x_2} +  \cdots {x_n}}}{n}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-yhomt6k">被称为<strong data-type="NodeStrong"><a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%25E7%25AE%2597%25E6%259C%25AF%25E5%25B9%25B3%25E5%259D%2587%25E6%2595%25B0">算术平均数</a></strong>。</p>
+<div data-content="Q_n = \sqrt {\frac{{\sum\limits_{i = 1}^n {{x_i}^2} }}{n}}  = \sqrt {\frac{{{x_1}^2 + {x_2}^2 +  \cdots {x_n}^2}}{n}}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-xx48ly3">被称为<strong data-type="NodeStrong"><a href="https://link.zhihu.com/?target=https%3A//baike.baidu.com/item/%25E5%25B9%25B3%25E6%2596%25B9%25E5%25B9%25B3%25E5%259D%2587%25E6%2595%25B0">平方平均数</a></strong>（或均方根）。</p>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-70wyxg4">对于这些平均数来说，有下面的不等式成立：</p>
+<div data-content="{\mathop{\rm H}\nolimits} _n \le {\mathop{\rm G}\nolimits} _n \le {\mathop{\rm A}\nolimits} _n \le {\mathop{\rm Q}\nolimits} _n" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-ckooino">该不等式被称为均值不等式。即调和平均数不超过几何平均数，几何平均数不超过算术平均数，算术平均数不超过平方平均数，简记为“调几算方”。</p>
+<h4 id="一般形式" updated="20220506101354" data-type="NodeHeading" data-n-id="20220506101354-25rt7ff"><strong data-type="NodeStrong">一般形式</strong><a id="vditorAnchor-一般形式" class="vditor-anchor" href="#一般形式"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-59bppvb">设函数</p>
+<div data-content="{\mathop{\rm D}\nolimits} \left( r \right) = {\left( {\frac{{{a_1}^r + {a_2}^r +  \cdots  + {a_n}^r}}{n}} \right)^{\frac{1}{r}}},\left( {r \ne 0} \right)" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-okaj83y">将 r 视为连续的，可证，<span data-subtype="math" data-content="\dfrac{\mathrm{d}}{\mathrm{d}r}\mathrm{D}\left( r \right) \ge 0"></span>，于是 <span data-subtype="math" data-content="{\mathop{\rm D}\nolimits} (r)"></span> 是 <span data-subtype="math" data-content="\left( { - \infty , + \infty } \right)"></span> 上的（非严格）单调递增函数。于是，<span data-subtype="math" data-content="r &lt; s"></span> 时， <span data-subtype="math" data-content="{\mathop{\rm D}\nolimits} (r) &lt; {\mathop{\rm D}\nolimits} (s)"></span></p>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-ql9dsyx"><em data-type="NodeEmphasis">下面在二元情况下推导 <span data-subtype="math" data-content="\frac{\mathrm{d}}{\mathrm{d}r}\mathrm{D}\left( r \right) \ge 0"></span> ，不妨设 <span data-subtype="math" data-content="b/a=c"></span>，构造</em></p>
+<div data-content="f(r)=\frac{1}{a}\mathrm{D}\left( r \right) =\frac{1}{a}\left( \frac{a^r+b^r}{2} \right) ^{\frac{1}{r}}=\left( \frac{1+c^r}{2} \right) ^{\frac{1}{r}}" data-subtype="math"><div spin="1"></div></div>
+<div data-content="\begin{aligned}  \frac{\text{d}}{\text{d}r}\ln f(r) &amp;=\frac{\frac{c^r \ln c^r}{1+c^r} -\ln \frac{1+c^r}{2} }{r^2}\\ &amp;=\frac{c^r \ln c^r -(1+c^r)\ln \frac{1+c^r}{2} } {r^2(1+c^r)} \end{aligned}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-pihq9rx"><em data-type="NodeEmphasis">考虑分子：</em></p>
+<div data-content="g(r)=r\ln r-(r+1)\ln \frac{1+r}{2}" data-subtype="math"><div spin="1"></div></div>
+<div data-content="\begin{aligned}  g'(r)=\ln \frac{2r}{r+1} &amp;\Rightarrow  \begin{cases} r\in(0,1) &amp;g(r)&gt;g(1)=0\\ r\in(1,\infty)&amp;g(r) &gt; g(1)=0  \end{cases}   \end{aligned}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-z1oabw0"><em data-type="NodeEmphasis">于是<span data-subtype="math" data-content="\frac{\mathrm{d}}{\mathrm{d}r}\ln f(r)\ge 0"></span>，而 <span data-subtype="math" data-content="\ln x"></span> 是单调增函数，于是<span data-subtype="math" data-content="\frac{\mathrm{d}}{\mathrm{d}r}f(r)\ge 0"></span>，<span data-subtype="math" data-content="\frac{\mathrm{d}}{\mathrm{d}r}\mathrm{D}\left( r \right) \ge 0"></span> .</em> <span data-subtype="math" data-content="\square"></span></p>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-7mr5rlm">考虑到</p>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-czw7jmy"><span data-subtype="math" data-content="\mathop {\mathrm{D}}_{}(0)=\lim_{r\rightarrow 0} \mathrm{D}\left( r \right) =\left( \prod_{i=1}^n{a_n} \right) ^{\frac{1}{n}}=(a_1\cdot a_2\cdots a_n)^{\frac{1}{n}}= {\mathop{\rm G}\nolimits} _n,"></span></p>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-mg8pyr4"><span data-subtype="math" data-content="{\mathop{\rm D}\nolimits} ( + \infty ) = \mathop {\lim }\limits_{x \to  + \infty } {\mathop{\rm D}\nolimits} (r) = \max \{ {a_n}:1 \le i \le n\} "></span></p>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-5nd4vx0"><span data-subtype="math" data-content="{\mathop{\rm D}\nolimits} ( - \infty ) = \mathop {\lim }\limits_{x \to  - \infty } {\mathop{\rm D}\nolimits} (r) = \min \{ {a_n}:1 \le i \le n\} "></span></p>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-ck3hffp"><span data-subtype="math" data-content="{\mathop{\rm D}\nolimits} ( - 1) = {\mathop{\rm H}\nolimits} _n,{\mathop{\rm D}\nolimits} (0) = {\mathop{\rm G}\nolimits} _n,{\mathop{\rm D}\nolimits} (1) = {\mathop{\rm A}\nolimits} _n,{\mathop{\rm D}\nolimits} (2) = {\mathop{\rm Q}\nolimits} _n"></span></p>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-v2skymf"><strong data-type="NodeStrong">可以注意到， <span data-subtype="math" data-content="\min \left\{ {{a_n}} \right\} \le H_n \le G_n \le A_n \le Q_n \le \max \left\{ {{a_n}} \right\}"></span> 仅是上述不等式的特殊情形。</strong></p>
+<h4 id="几何意义" updated="20220506101354" data-type="NodeHeading" data-n-id="20220506101354-fjpynst">几何意义<a id="vditorAnchor-几何意义" class="vditor-anchor" href="#几何意义"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-1e1erxp">设PM=a，QM=b，然后其他每一段长度就可以表示出来的，比如AM=AQ+QM，即等于一个半径+QM，而PM等于两个半径加QM，所以AM=（a+b）/2，同理半径AG=AR=（a-b）/2，然后在直角三角形AGM中，可以用射影定理知二求四，或者可以用勾股定理和等面积法求出GM和GH（甚至GH、AH等长度），还有RM的长度，然后由斜边大于直角边就可以得到四个不等式了，而如果R点和G点与Q点重合的时候就可以取等号，这样四个不等式一下子就证明了。</p>
+<p style="text-aligned: center;" updated="20220506101354" data-type="NodeParagraph" data-n-id="20220506101354-6ch39ac"><span class="img" style="display: block;"><img src="../assets/image-20220505093201-q6kgx8s.png" alt="image.png" parent-style="display: block;" data-type="NodeImage" /></span></p>
+</main>
+</main>

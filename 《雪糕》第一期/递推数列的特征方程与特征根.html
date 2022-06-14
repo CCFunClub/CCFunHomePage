@@ -1,0 +1,69 @@
+
+<!doctype html>
+<html lang="zh">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>递推数列的特征方程与特征根</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vditor/dist/index.css" />
+    
+
+    
+
+    
+    <script src="./../assets/front-end-lib/all_components.js"></script>
+    
+        
+        
+        
+
+
+    
+
+    <link rel="stylesheet" href="./../assets/js_css/theme.css">
+    <link rel="stylesheet" href="./../assets/js_css/github-markdown-css.css">
+</head>
+
+
+
+<main id="static_app_llej" class="markdown-body">
+    <main title="递推数列的特征方程与特征根" updated="20220511103657" data-type="NodeDocument" data-n-id="20220511103514-i6nqwab" updated="20220511103657" data-n-id="20220511103514-i6nqwab"><h1 title="递推数列的特征方程与特征根" updated="20220511103657" data-type="NodeDocument" data-n-id="20220511103514-i6nqwab" updated="20220511103657" data-n-id="20220511103514-i6nqwab">递推数列的特征方程与特征根</h1>
+<p updated="20220511103657" data-type="NodeParagraph" data-n-id="20220511103524-dbmruhs">作者：Dylaaan - 知乎<br /></p>
+<p updated="20220511103526" data-type="NodeParagraph" data-n-id="20220511103524-6hvbxc2">这篇文章应该还是比较容易理解的，毕竟没有提到更高阶的线性递推数列。</p>
+<h4 id="一-从一阶线性递推数列说起" updated="20220511103524" data-type="NodeHeading" data-n-id="20220511103524-6dt2ro1">一、从一阶线性递推数列说起<a id="vditorAnchor-一-从一阶线性递推数列说起" class="vditor-anchor" href="#一-从一阶线性递推数列说起"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220511103558" data-type="NodeParagraph" data-n-id="20220511103524-l9wx1v4">之前先介绍了<a href="https://zhuanlan.zhihu.com/p/104544760">数列的不动点法</a>，现在可以顺带扯一下特征根法。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-ag46159">在上面的文章中提到，一阶线性递推数列，可以通过构造等比数列，来求出其通项公式，也即，若数列 <span data-subtype="math" data-content="\{x_n\}"></span> 的递推式为 <span data-subtype="math" data-content="x_{n+1}=px_n+q"></span>，其中 <span data-subtype="math" data-content="p\ne 1"></span> ， <span data-subtype="math" data-content="x_1"></span> 是给定的常数，其实可以通过待定系数法，尝试构造公比为 <span data-subtype="math" data-content="p"></span> 的数列：假设存在实数 <span data-subtype="math" data-content="x_0"></span> ，使得 <span data-subtype="math" data-content="x_{n+1}-x_0=p\cdot(x_n-x_0)"></span> ，展开得到 <span data-subtype="math" data-content="(1-p)\cdot x_0=q"></span> ，解得 <span data-subtype="math" data-content="x_0=\frac{q}{1-p}"></span> 。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-kxngj14">因此数列 <span data-subtype="math" data-content="\{x_n-\frac{q}{1-p}\}"></span> 是等比数列，累乘得 <span data-subtype="math" data-content="x_n-\frac{q}{1-p}=p^{n-1}\cdot(x_1-\frac{q}{1-p})"></span> ，移项后即可得到通项公式为 <span data-subtype="math" data-content="x_n=\frac{q}{1-p}+p^{n-1}\cdot(x_1-\frac{q}{1-p})"></span> ，其中 <span data-subtype="math" data-content="p\ne 1"></span> 。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-sunkt2f"><strong data-type="NodeStrong">这时候，数列的通项公式是“常数+等比”的形式。</strong></p>
+<h4 id="二-再看二阶线性递推数列" updated="20220511103524" data-type="NodeHeading" data-n-id="20220511103524-byebpqe">二、再看二阶线性递推数列<a id="vditorAnchor-二-再看二阶线性递推数列" class="vditor-anchor" href="#二-再看二阶线性递推数列"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-2v3pm8p">接下来考虑二阶线性递推数列，也即，若数列 <span data-subtype="math" data-content="\{x_n\}"></span> 的递推式为 <span data-subtype="math" data-content="x_{n+1}=px_n+qx_{n-1}"></span> ，其中 <span data-subtype="math" data-content="x_1"></span> ， <span data-subtype="math" data-content="x_2"></span> 是给定的常数，要怎么做呢？</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-4zdnv40">类比上面的过程，我们也可以尝试通过待定系数法，看看能不能构造出等比数列：假设存在实数 <span data-subtype="math" data-content="a"></span> ， <span data-subtype="math" data-content="b"></span> ，使得 <span data-subtype="math" data-content="x_{n+1}-ax_n=b\cdot(x_n-ax_{n-1})"></span> 。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-1ja96z7">整理得到 <span data-subtype="math" data-content="x_{n+1}=(a+b)\cdot x_n-ab\cdot x_{n-1}"></span>，令 <span data-subtype="math" data-content="\left\{ \begin{aligned} &amp;a+b=p\\ &amp;ab=-q \end{aligned} \right."></span> ，根据韦达定理，可以知道实数 <span data-subtype="math" data-content="a"></span> ， <span data-subtype="math" data-content="b"></span> 满足方程 <span data-subtype="math" data-content="x^2-px-q=0"></span> 。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-9rbafw8">因此 <span data-subtype="math" data-content="\{x_{n+1}-ax_n\}"></span> 是公比为 <span data-subtype="math" data-content="b"></span> 的等比数列，累乘得 <span data-subtype="math" data-content="x_{n+1}-ax_n=(x_2-ax_1)\cdot b^{n-1}"></span>。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-0u39p57">同理 <span data-subtype="math" data-content="x_{n+1}-bx_n=a\cdot(x_n-bx_{n-1})"></span> ，因此 <span data-subtype="math" data-content="\{x_{n+1}-bx_n\}"></span> 是公比为 <span data-subtype="math" data-content="a"></span> 的等比数列，累乘得 <span data-subtype="math" data-content="x_{n+1}-bx_n =(x_2-bx_1)\cdot a^{n-1}"></span>。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-v8i6fxc">由上面两个式子作差，解得 <span data-subtype="math" data-content="x_n=\frac{x_2-bx_1}{a-b}\cdot a^{n-1}+\frac{x_2-ax_1}{b-a}\cdot b^{n-1}"></span> 。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-jx6yixu"><strong data-type="NodeStrong">因此，数列的通项公式是“等比+等比”的形式。</strong>为了更方便得到上面的结果，可以再次应用待定系数法，设 <span data-subtype="math" data-content="x_n=\alpha \cdot a^{n-1}+\beta\cdot b^{n-1}"></span> ，列出如下方程：</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-gbiyixs"><span data-subtype="math" data-content="\left\{ \begin{aligned} &amp;x_1=\alpha+\beta\\ &amp;x_2=\alpha\cdot a+\beta\cdot b\end{aligned} \right."></span> ，解得 <span data-subtype="math" data-content="\left\{ \begin{aligned} &amp;\alpha =\frac{x_2-bx_1}{a-b}\\ &amp;\beta =\frac{x_2-ax_1}{b-a} \end{aligned} \right."></span>。</p>
+<h4 id="三-特征根法的完整过程" updated="20220511103524" data-type="NodeHeading" data-n-id="20220511103524-dmesj76">三、特征根法的完整过程<a id="vditorAnchor-三-特征根法的完整过程" class="vditor-anchor" href="#三-特征根法的完整过程"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-x4v40cy">设数列 <span data-subtype="math" data-content="\{x_n\}"></span> 的前两项 <span data-subtype="math" data-content="x_1"></span> ， <span data-subtype="math" data-content="x_2"></span> 已知，且 <span data-subtype="math" data-content="x_{n+1}=px_n+qx_{n-1}"></span> ，则称方程 <span data-subtype="math" data-content="x^2-px-q=0"></span> 为该数列的<strong data-type="NodeStrong">特征方程</strong>。该方程若有两个根 <span data-subtype="math" data-content="a"></span> ， <span data-subtype="math" data-content="b"></span> ，则称这两个根为该数列的<strong data-type="NodeStrong">特征根</strong>。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-yt1ad6n">因此设数列 <span data-subtype="math" data-content="x_n=\alpha\cdot a^{n-1}+\beta\cdot b^{n-1}"></span> ，由<span data-subtype="math" data-content="\left\{ \begin{aligned} &amp;x_1=\alpha+\beta\\ &amp;x_2=\alpha\cdot a+\beta\cdot b\end{aligned} \right."></span> ，解得 <span data-subtype="math" data-content="\left\{ \begin{aligned} &amp;\alpha =\frac{x_2-bx_1}{a-b}\\ &amp;\beta =\frac{x_2-ax_1}{b-a} \end{aligned} \right."></span>。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-nteu7uu">因此数列的通项公式为 <span data-subtype="math" data-content="x_n=\frac{x_2-bx_1}{a-b}\cdot a^{n-1}+\frac{x_2-ax_1}{b-a}\cdot b^{n-1}"></span> 。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-itcdba2">这样看来，特征根法其实很简单，只要自己动手操作一遍就能掌握了。</p>
+<h4 id="四-经典的-斐波拉契-Fibonacci-数列-" updated="20220511103524" data-type="NodeHeading" data-n-id="20220511103524-hr0gneg">四、经典的“斐波拉契（Fibonacci）数列”<a id="vditorAnchor-四-经典的-斐波拉契-Fibonacci-数列-" class="vditor-anchor" href="#四-经典的-斐波拉契-Fibonacci-数列-"><img src="./../assets/icon/alink.png" /></a></h4>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-ewt7ofl">小学的时候应该都有见过这样的找规律的题目， <span data-subtype="math" data-content="1"></span> ， <span data-subtype="math" data-content="1"></span> ， <span data-subtype="math" data-content="2"></span> ， <span data-subtype="math" data-content="3"></span> ， <span data-subtype="math" data-content="5"></span> ， <span data-subtype="math" data-content="8"></span> ， <span data-subtype="math" data-content="\cdots"></span></p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-fwlfc80">这其实是很经典的问题，多看一会儿就会发现，这一串数字中，后一项等于前两项之和。由此我们可以定义斐波拉契（Fibonacci）数列：</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-gyjvi67"><strong data-type="NodeStrong">斐波拉契（Fibonacci）数列</strong>为满足：前两项<span data-subtype="math" data-content="a_1=1"></span>，<span data-subtype="math" data-content="a_2=1"></span>，且<span data-subtype="math" data-content="a_{n+2}=a_{n+1}+a_n"></span>的数列。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-i3yai6s">由 <span data-subtype="math" data-content="a_{n+2}=a_{n+1}+a_n"></span> ，得到特征方程 <span data-subtype="math" data-content="x^2-x-1=0"></span> ，解得 <span data-subtype="math" data-content="x_1=\frac{1+\sqrt5}{2}"></span> ， <span data-subtype="math" data-content="x_2=\frac{1-\sqrt5}{2}"></span> 。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-dk1zzt0">设 <span data-subtype="math" data-content="a_n=Ax_1^n+Bx_2^n"></span> ，由 <span data-subtype="math" data-content="a_1=1"></span> ， <span data-subtype="math" data-content="a_2=1"></span> ，得到方程组</p>
+<div data-content="\begin{equation} \left\{              \begin{array}{lr}               A(\dfrac{1+\sqrt5}{2})+B(\dfrac{1-\sqrt5}{2})=1\\              A(\dfrac{1+\sqrt5}{2})^2+B(\dfrac{1-\sqrt5}{2})^2=1\\              \end{array} \right. \end{equation}" data-subtype="math"><div spin="1"></div></div>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-3qq4k93">解得 <span data-subtype="math" data-content="A=B=\frac{1}{\sqrt5}"></span> ，故 <span data-subtype="math" data-content="a_n=\frac{1}{\sqrt5}[(\frac{1+\sqrt5}{2})^n-(\frac{1-\sqrt5}{2})^n]"></span> 。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-so4xn8q">比较神奇的是，虽然这个数列的通项公式非常难看，但算出来居然每一项都是整数。就像我的前几篇文章，给出的数列可能带着虚数单位 <span data-subtype="math" data-content="i"></span> ，但是算出来居然都是实数。</p>
+<p updated="20220511103524" data-type="NodeParagraph" data-n-id="20220511103524-mxdqwit">并且比较有意思的是，斐波拉契数列的后一项比上前一项，会越来越接近黄金分割比。斐波那契数列还有许多有意思的性质，但在这里就不多提及了。如果有机会的话我可能会单独写一篇文章简要介绍一下。</p>
+</main>
+</main>
