@@ -11,7 +11,7 @@ body {
 	-webkit-text-size-adjust: 100%;
 	line-height: 1.5;
 	color: #24292e;
-	font-family:  "PingFang SC Light", "PingFang TC Light", "Hiragino Sans GB", "Microsoft Yahei", "Segoe UI", serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+	font-family:  "PingFang SC Light", "PingFang TC Light", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif ;
 	font-size: 16px;
 	line-height: 1.5;
 	word-wrap: break-word;
@@ -539,6 +539,6 @@ main[data-type='NodeDocument'] {
 
 em {
     font-style: normal;
-    font-family: STKaiti, "楷体","楷体_GB2312",SimKai, Kai, "Charis SIL", "Gentium Book Plus", "Gentium Plus", serif !important;
-    font-size: 1.2em;
+    font-family: STKaiti, "楷体","楷体_GB2312",SimKai, "Charis SIL", "Gentium Book Plus", "Gentium Plus",Kai,  serif !important;
+    font-size: 1em;
 }
